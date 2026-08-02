@@ -1,0 +1,2028 @@
+{
+  "001": [
+    { "code": "00101", "name": "Port Reitz" },
+    { "code": "00102", "name": "Kipevu" },
+    { "code": "00103", "name": "Airport" },
+    { "code": "00104", "name": "Changamwe" },
+    { "code": "00105", "name": "Chaani" }
+  ],
+  "002": [
+    { "code": "00201", "name": "Jomvu Kuu" },
+    { "code": "00202", "name": "Miritini" },
+    { "code": "00203", "name": "Mikindani" }
+  ],
+  "003": [
+    { "code": "00301", "name": "Mjambere" },
+    { "code": "00302", "name": "Junda" },
+    { "code": "00303", "name": "Bamburi" },
+    { "code": "00304", "name": "Mwakirunge" },
+    { "code": "00305", "name": "Mtopanga" },
+    { "code": "00306", "name": "Magogoni" },
+    { "code": "00307", "name": "Shanzu" }
+  ],
+  "004": [
+    { "code": "00401", "name": "Frere Town" },
+    { "code": "00402", "name": "Ziwa La Ng'ombe" },
+    { "code": "00403", "name": "Mkomani" },
+    { "code": "00404", "name": "Kongowea" },
+    { "code": "00405", "name": "Kadzandani" }
+  ],
+  "005": [
+    { "code": "00501", "name": "Mtongwe" },
+    { "code": "00502", "name": "Shika Adabu" },
+    { "code": "00503", "name": "Bofu" },
+    { "code": "00504", "name": "Likoni" },
+    { "code": "00505", "name": "Timbwani" }
+  ],
+  "006": [
+    { "code": "00601", "name": "Mji wa Kale/Makadara" },
+    { "code": "00602", "name": "Tudor" },
+    { "code": "00603", "name": "Tononoka" },
+    { "code": "00604", "name": "Shimanzi/Ganjoni" },
+    { "code": "00605", "name": "Majengo" }
+  ],
+  "007": [
+    { "code": "00701", "name": "Gombato Bongwe" },
+    { "code": "00702", "name": "Ukunda" },
+    { "code": "00703", "name": "Kinondo" },
+    { "code": "00704", "name": "Ramisi" }
+  ],
+  "008": [
+    { "code": "00801", "name": "Pongwe Kikoneni" },
+    { "code": "00802", "name": "Dzombo" },
+    { "code": "00803", "name": "Mwereni" },
+    { "code": "00804", "name": "Vanga" }
+  ],
+  "009": [
+    { "code": "00901", "name": "Tsimba Golini" },
+    { "code": "00902", "name": "Waa" },
+    { "code": "00903", "name": "Tiwi" },
+    { "code": "00904", "name": "Kubo South" },
+    { "code": "00905", "name": "Mkongani" }
+  ],
+  "010": [
+    { "code": "01001", "name": "Nadavaya" },
+    { "code": "01002", "name": "Puma" },
+    { "code": "01003", "name": "Kinango" },
+    { "code": "01004", "name": "Mackinnon Road" },
+    { "code": "01005", "name": "Chengoni/Samburu" },
+    { "code": "01006", "name": "Mwavumbo" },
+    { "code": "01007", "name": "Kasemeni" }
+  ],
+  "011": [
+    { "code": "01101", "name": "Tezo" },
+    { "code": "01102", "name": "Sokoni" },
+    { "code": "01103", "name": "Kibarani" },
+    { "code": "01104", "name": "Dabaso" },
+    { "code": "01105", "name": "Matsangoni" },
+    { "code": "01106", "name": "Watamu" },
+    { "code": "01107", "name": "Mnarani" }
+  ],
+  "012": [
+    { "code": "01201", "name": "Junju" },
+    { "code": "01202", "name": "Mwarakaya" },
+    { "code": "01203", "name": "Shimo La Tewa" },
+    { "code": "01204", "name": "Chasimba" },
+    { "code": "01205", "name": "Mtepeni" }
+  ],
+  "013": [
+    { "code": "01301", "name": "Mariakani" },
+    { "code": "01302", "name": "Kayafungo" },
+    { "code": "01303", "name": "Kaloleni" },
+    { "code": "01304", "name": "Mwanamwinga" }
+  ],
+  "014": [
+    { "code": "01401", "name": "Mwawesa" },
+    { "code": "01402", "name": "Ruruma" },
+    { "code": "01403", "name": "Kambe/Ribe" },
+    { "code": "01404", "name": "Rabai/Kisurutini" }
+  ],
+  "015": [
+    { "code": "01501", "name": "Ganze" },
+    { "code": "01502", "name": "Bamba" },
+    { "code": "01503", "name": "Jaribuni" },
+    { "code": "01504", "name": "Sokoke" }
+  ],
+  "016": [
+    { "code": "01601", "name": "Jilore" },
+    { "code": "01602", "name": "Kakuyuni" },
+    { "code": "01603", "name": "Ganda" },
+    { "code": "01604", "name": "Malindi Town" },
+    { "code": "01605", "name": "Shella" }
+  ],
+  "017": [
+    { "code": "01701", "name": "Magarini" },
+    { "code": "01702", "name": "Marafa" },
+    { "code": "01703", "name": "Adu" },
+    { "code": "01704", "name": "Garashi" },
+    { "code": "01705", "name": "Gongoni" }
+  ],
+  "018": [
+    { "code": "01801", "name": "Kipini East" },
+    { "code": "01802", "name": "Garsen South" },
+    { "code": "01803", "name": "Kipini West" },
+    { "code": "01804", "name": "Garsen Central" },
+    { "code": "01805", "name": "Garsen North" }
+  ],
+  "019": [
+    { "code": "01901", "name": "Kinakomba" },
+    { "code": "01902", "name": "Mikinduni" },
+    { "code": "01903", "name": "Chewani" },
+    { "code": "01904", "name": "Wayu" }
+  ],
+  "020": [
+    { "code": "02001", "name": "Chewele" },
+    { "code": "02002", "name": "Hirimani" },
+    { "code": "02003", "name": "Bangale" },
+    { "code": "02004", "name": "Sala" },
+    { "code": "02005", "name": "Madogo" }
+  ],
+  "021": [
+    { "code": "02101", "name": "Faza" },
+    { "code": "02102", "name": "Kiunga" },
+    { "code": "02103", "name": "Basuba" }
+  ],
+  "022": [
+    { "code": "02201", "name": "Shella" },
+    { "code": "02202", "name": "Mkomani" },
+    { "code": "02203", "name": "Hindi" },
+    { "code": "02204", "name": "Mkunumbi" },
+    { "code": "02205", "name": "Hongwe" },
+    { "code": "02206", "name": "Witu" },
+    { "code": "02207", "name": "Bahari" }
+  ],
+  "023": [
+    { "code": "02301", "name": "Taveta" },
+    { "code": "02302", "name": "Bomeni" },
+    { "code": "02303", "name": "Mata" },
+    { "code": "02304", "name": "Mahoo" }
+  ],
+  "024": [
+    { "code": "02401", "name": "Wundanyi/Mbale" },
+    { "code": "02402", "name": "Werugha" },
+    { "code": "02403", "name": "Wumingu/Kishushe" },
+    { "code": "02404", "name": "Mwanda/Mgange" }
+  ],
+  "025": [
+    { "code": "02501", "name": "Ronge" },
+    { "code": "02502", "name": "Mwatate" },
+    { "code": "02503", "name": "Bura" },
+    { "code": "02504", "name": "Chawia" },
+    { "code": "02505", "name": "Wusi/Kishamba" }
+  ],
+  "026": [
+    { "code": "02601", "name": "Mbololo" },
+    { "code": "02602", "name": "Sagalla" },
+    { "code": "02603", "name": "Kaloleni" },
+    { "code": "02604", "name": "Marungu" },
+    { "code": "02605", "name": "Kasigau" },
+    { "code": "02606", "name": "Ngolia" }
+  ],
+  "027": [
+    { "code": "02701", "name": "Waberi" },
+    { "code": "02702", "name": "Galbet" },
+    { "code": "02703", "name": "Township" },
+    { "code": "02704", "name": "Iftin" }
+  ],
+  "028": [
+    { "code": "02801", "name": "Balambala" },
+    { "code": "02802", "name": "Danyere" },
+    { "code": "02803", "name": "Jara Jara" },
+    { "code": "02804", "name": "Saka" },
+    { "code": "02805", "name": "Sankuri" }
+  ],
+  "029": [
+    { "code": "02901", "name": "Modogashe" },
+    { "code": "02902", "name": "Benane" },
+    { "code": "02903", "name": "Goreale" },
+    { "code": "02904", "name": "Maalamin" },
+    { "code": "02905", "name": "Sabena" },
+    { "code": "02906", "name": "Baraki" }
+  ],
+  "030": [
+    { "code": "03001", "name": "Dertu" },
+    { "code": "03002", "name": "Dadaab" },
+    { "code": "03003", "name": "Labasigale" },
+    { "code": "03004", "name": "Damajale" },
+    { "code": "03005", "name": "Liboi" },
+    { "code": "03006", "name": "Abakaile" }
+  ],
+  "031": [
+    { "code": "03101", "name": "Bura" },
+    { "code": "03102", "name": "Dekaharia" },
+    { "code": "03103", "name": "Jarajila" },
+    { "code": "03104", "name": "Fafi" },
+    { "code": "03105", "name": "Nanighi" }
+  ],
+  "032": [
+    { "code": "03201", "name": "Ijara" },
+    { "code": "03202", "name": "Hulugho" },
+    { "code": "03203", "name": "Sangailu" },
+    { "code": "03204", "name": "Bothai" },
+    { "code": "03205", "name": "Korisa" }
+  ],
+  "033": [
+    { "code": "03301", "name": "Gurar" },
+    { "code": "03302", "name": "Bute" },
+    { "code": "03303", "name": "Korondille" },
+    { "code": "03304", "name": "Malkagufu" },
+    { "code": "03305", "name": "Batalu" },
+    { "code": "03306", "name": "Danaba" },
+    { "code": "03307", "name": "Godoma" }
+  ],
+ "034": [
+    { "code": "03401", "name": "Wagberi" },
+    { "code": "03402", "name": "Township" },
+    { "code": "03403", "name": "Barwago" },
+    { "code": "03404", "name": "Khorof/Harar" },
+    { "code": "03405", "name": "Wajir Bor" },
+    { "code": "03406", "name": "Ganyure/Wagalla" }
+],
+  "035": [
+    { "code": "03501", "name": "Tarbaj" },
+    { "code": "03502", "name": "Sarman" },
+    { "code": "03503", "name": "Daddyai" },
+    { "code": "03504", "name": "El Nur" }
+  ],
+  "036": [
+    { "code": "03601", "name": "Arbajahan" },
+    { "code": "03602", "name": "Hadado/Athibohol" },
+    { "code": "03603", "name": "Adamasajide" },
+    { "code": "03604", "name": "Ganyure/Wagalla" }
+  ],
+  "037": [
+    { "code": "03701", "name": "Eldas" },
+    { "code": "03702", "name": "Della" },
+    { "code": "03703", "name": "Lakole South/Basir" },
+    { "code": "03704", "name": "Elnur/Tula Tula" }
+  ],
+  "038": [
+    { "code": "03801", "name": "Benane" },
+    { "code": "03802", "name": "Burder" },
+    { "code": "03803", "name": "Dadaja Bulla" },
+    { "code": "03804", "name": "Habaswein" },
+    { "code": "03805", "name": "Lagboghol South" },
+    { "code": "03806", "name": "Ibrahim Ure" },
+    { "code": "03807", "name": "Diif" }
+  ],
+  "039": [
+    { "code": "03901", "name": "Takaba South" },
+    { "code": "03902", "name": "Takaba" },
+    { "code": "03903", "name": "Lagsure" },
+    { "code": "03904", "name": "Dandu" },
+    { "code": "03905", "name": "Gither" }
+  ],
+  "040": [
+    { "code": "04001", "name": "Banissa" },
+    { "code": "04002", "name": "Derkhale" },
+    { "code": "04003", "name": "Guba" },
+    { "code": "04004", "name": "Malkamari" },
+    { "code": "04005", "name": "Kiliwehiri" }
+  ],
+  "041": [
+    { "code": "04101", "name": "Ashabito" },
+    { "code": "04102", "name": "Guticha" },
+    { "code": "04103", "name": "Morothile" },
+    { "code": "04104", "name": "Rhamu" },
+    { "code": "04105", "name": "Shimbir Fatuma" }
+  ],
+  "042": [
+    { "code": "04201", "name": "Wargadud" },
+    { "code": "04202", "name": "Kutulo" },
+    { "code": "04203", "name": "Elwak South" },
+    { "code": "04204", "name": "Elwak North" },
+    { "code": "04205", "name": "Shimbir Fatuma" }
+  ],
+  "043": [
+    { "code": "04301", "name": "Township" },
+    { "code": "04302", "name": "Neboi" },
+    { "code": "04303", "name": "Khalalio" },
+    { "code": "04304", "name": "Libehia" }
+  ],
+  "044": [
+    { "code": "04401", "name": "Sala" },
+    { "code": "04402", "name": "Fino" },
+    { "code": "04403", "name": "Lafey" },
+    { "code": "04404", "name": "Waranqara" },
+    { "code": "04405", "name": "Alango Gof" }
+  ],
+  "045": [
+    { "code": "04501", "name": "Butiye" },
+    { "code": "04502", "name": "Sololo" },
+    { "code": "04503", "name": "Heilu/Manyatta" },
+    { "code": "04504", "name": "Golbo" },
+    { "code": "04505", "name": "Moyale Township" },
+    { "code": "04506", "name": "Uran" },
+    { "code": "04507", "name": "Obbu" }
+  ],
+  "046": [
+    { "code": "04601", "name": "Illeret" },
+    { "code": "04602", "name": "North Horr" },
+    { "code": "04603", "name": "Dukana" },
+    { "code": "04604", "name": "Maikona" },
+    { "code": "04605", "name": "Turbi" }
+  ],
+  "047": [
+    { "code": "04701", "name": "Sagante/Jaldesa" },
+    { "code": "04702", "name": "Karare" },
+    { "code": "04703", "name": "Marsabit Central" }
+  ],
+  "048": [
+    { "code": "04801", "name": "Loiyangalani" },
+    { "code": "04802", "name": "Kargi/South Horr" },
+    { "code": "04803", "name": "Korr/Ngurunit" },
+    { "code": "04804", "name": "Log Logo" },
+    { "code": "04805", "name": "Laisamis" }
+  ],
+  "049": [
+    { "code": "04901", "name": "Wabera" },
+    { "code": "04902", "name": "Bulla Pesa" },
+    { "code": "04903", "name": "Chari" },
+    { "code": "04904", "name": "Cherab" },
+    { "code": "04905", "name": "Ngare Mara" },
+    { "code": "04906", "name": "Burat" },
+    { "code": "04907", "name": "Oldonyiro" }
+  ],
+  "050": [
+    { "code": "05001", "name": "Garbatulla" },
+    { "code": "05002", "name": "Kinna" },
+    { "code": "05003", "name": "Sericho" }
+  ],
+  "051": [
+    { "code": "05101", "name": "Maua" },
+    { "code": "05102", "name": "Kiegoi/Antubochiu" },
+    { "code": "05103", "name": "Athiru Gaiti" },
+    { "code": "05104", "name": "Akachiu" },
+    { "code": "05105", "name": "Kanuni" }
+  ],
+  "052": [
+    { "code": "05201", "name": "Akirang'ondu" },
+    { "code": "05202", "name": "Athiru Ruujine" },
+    { "code": "05203", "name": "Igembe East" },
+    { "code": "05204", "name": "Njia" },
+    { "code": "05205", "name": "Kangeta" }
+  ],
+  "053": [
+    { "code": "05301", "name": "Antuambui" },
+    { "code": "05302", "name": "Ntunene" },
+    { "code": "05303", "name": "Antubetwe Kiongo" },
+    { "code": "05304", "name": "Nathu" },
+    { "code": "05305", "name": "Amwathi" }
+  ],
+  "054": [
+    { "code": "05401", "name": "Mbeu" },
+    { "code": "05402", "name": "Kianjai" },
+    { "code": "05403", "name": "Nkomo" },
+    { "code": "05404", "name": "Muthara" }
+  ],
+  "055": [
+    { "code": "05501", "name": "Mikinduri" },
+    { "code": "05502", "name": "Thangatha" },
+    { "code": "05503", "name": "Muthara" },
+    { "code": "05504", "name": "Karama" },
+    { "code": "05505", "name": "Muthara" }
+  ],
+  "056": [
+    { "code": "05601", "name": "Municipality" },
+    { "code": "05602", "name": "Ntima East" },
+    { "code": "05603", "name": "Ntima West" },
+    { "code": "05604", "name": "Nyaki West" },
+    { "code": "05605", "name": "Nyaki East" }
+  ],
+  "057": [
+    { "code": "05701", "name": "Timau" },
+    { "code": "05702", "name": "Kisima" },
+    { "code": "05703", "name": "Kiirua/Naari" },
+    { "code": "05704", "name": "Ruiri/Rwarera" },
+    { "code": "05705", "name": "Kibirichia" }
+  ],
+  "058": [
+    { "code": "05801", "name": "Mwanganthia" },
+    { "code": "05802", "name": "Abothuguchi Central" },
+    { "code": "05803", "name": "Abothuguchi West" },
+    { "code": "05804", "name": "Kiagu" },
+    { "code": "05805", "name": "Kibirichia" }
+  ],
+  "059": [
+    { "code": "05901", "name": "Mitunguu" },
+    { "code": "05902", "name": "Igoji East" },
+    { "code": "05903", "name": "Igoji West" },
+    { "code": "05904", "name": "Abogeta East" },
+    { "code": "05905", "name": "Abogeta West" },
+    { "code": "05906", "name": "Nkuene" }
+  ],
+  "060": [
+    { "code": "06001", "name": "Mitheru" },
+    { "code": "06002", "name": "Muthambi" },
+    { "code": "06003", "name": "Mwimbi" },
+    { "code": "06004", "name": "Ganga" },
+    { "code": "06005", "name": "Chogoria" }
+  ],
+  "061": [
+    { "code": "06101", "name": "Mariani" },
+    { "code": "06102", "name": "Karingani" },
+    { "code": "06103", "name": "Magumoni" },
+    { "code": "06104", "name": "Mugwe" },
+    { "code": "06105", "name": "Igambang'ombe" }
+  ],
+  "062": [
+    { "code": "06201", "name": "Gatunga" },
+    { "code": "06202", "name": "Mukothima" },
+    { "code": "06203", "name": "Nkondi" },
+    { "code": "06204", "name": "Chiakariga" },
+    { "code": "06205", "name": "Marimanti" }
+  ],
+  "063": [
+    { "code": "06301", "name": "Ruguru/Ngandori" },
+    { "code": "06302", "name": "Kithimu" },
+    { "code": "06303", "name": "Nginda" },
+    { "code": "06304", "name": "Mbeti North" },
+    { "code": "06305", "name": "Kirimari" },
+    { "code": "06306", "name": "Gaturi South" }
+  ],
+  "064": [
+    { "code": "06401", "name": "Gaturi North" },
+    { "code": "06402", "name": "Kagaari South" },
+    { "code": "06403", "name": "Kagaari North" },
+    { "code": "06404", "name": "Kyeni North" },
+    { "code": "06405", "name": "Kyeni South" },
+    { "code": "06406", "name": "Central" }
+  ],
+  "065": [
+    { "code": "06501", "name": "Mwea" },
+    { "code": "06502", "name": "Makima" },
+    { "code": "06503", "name": "Mbeti South" },
+    { "code": "06504", "name": "Mavuria" },
+    { "code": "06505", "name": "Kiambere" }
+  ],
+  "066": [
+    { "code": "06601", "name": "Nthawa" },
+    { "code": "06602", "name": "Muminji" },
+    { "code": "06603", "name": "Evurore" },
+    { "code": "06604", "name": "Mbeere North" }
+  ],
+  "067": [
+    { "code": "06701", "name": "Ngomeni" },
+    { "code": "06702", "name": "Kyuso" },
+    { "code": "06703", "name": "Mumoni" },
+    { "code": "06704", "name": "Tseikuru" },
+    { "code": "06705", "name": "Tharaka" }
+  ],
+  "068": [
+    { "code": "06801", "name": "Migwani" },
+    { "code": "06802", "name": "Nguutani" },
+    { "code": "06803", "name": "Kiomo/Kyethani" },
+    { "code": "06804", "name": "Central" }
+  ],
+  "069": [
+    { "code": "06901", "name": "Mui" },
+    { "code": "06902", "name": "Nguni" },
+    { "code": "06903", "name": "Nuu" },
+    { "code": "06904", "name": "Waita" },
+    { "code": "06905", "name": "Mwingi Central" }
+  ],
+  "070": [
+    { "code": "07001", "name": "Kauwi" },
+    { "code": "07002", "name": "Kisasi" },
+    { "code": "07003", "name": "Mutonguni" },
+    { "code": "07004", "name": "Matinyani" },
+    { "code": "07005", "name": "Kwa Vonza/Yatta" }
+  ],
+  "071": [
+    { "code": "07101", "name": "Kisasi" },
+    { "code": "07102", "name": "Mbitini" },
+    { "code": "07103", "name": "Kwavonza/Yatta" },
+    { "code": "07104", "name": "Kanyangi" }
+  ],
+  "072": [
+    { "code": "07201", "name": "Miambani" },
+    { "code": "07202", "name": "Township" },
+    { "code": "07203", "name": "Kyangwithya West" },
+    { "code": "07204", "name": "Mulango" },
+    { "code": "07205", "name": "Kyangwithya East" }
+  ],
+  "073": [
+    { "code": "07301", "name": "Zombe/Mwitika" },
+    { "code": "07302", "name": "Nzambani" },
+    { "code": "07303", "name": "Chuluni" },
+    { "code": "07304", "name": "Voo/Kyamatu" },
+    { "code": "07305", "name": "Endau/Malalani" },
+    { "code": "07306", "name": "Mutito/Kaliku" }
+  ],
+  "074": [
+    { "code": "07401", "name": "Ikanga/Kyatune" },
+    { "code": "07402", "name": "Mutomo" },
+    { "code": "07403", "name": "Mutha" },
+    { "code": "07404", "name": "Ikutha" },
+    { "code": "07405", "name": "Kanziko" },
+    { "code": "07406", "name": "Athi" }
+  ],
+  "075": [
+    { "code": "07501", "name": "Kivaa" },
+    { "code": "07502", "name": "Masinga" },
+    { "code": "07503", "name": "Ekalakala" },
+    { "code": "07504", "name": "Muthesya" },
+    { "code": "07505", "name": "Ndithini" }
+  ],
+  "076": [
+    { "code": "07601", "name": "Ndalani" },
+    { "code": "07602", "name": "Matuu" },
+    { "code": "07603", "name": "Kithimani" },
+    { "code": "07604", "name": "Ikombe" },
+    { "code": "07605", "name": "Katangi" }
+  ],
+  "077": [
+    { "code": "07701", "name": "Kangundo North" },
+    { "code": "07702", "name": "Kangundo Central" },
+    { "code": "07703", "name": "Kangundo East" },
+    { "code": "07704", "name": "Kangundo West" }
+  ],
+  "078": [
+    { "code": "07801", "name": "Tala" },
+    { "code": "07802", "name": "Matungulu North" },
+    { "code": "07803", "name": "Matungulu East" },
+    { "code": "07804", "name": "Matungulu West" },
+    { "code": "07805", "name": "Kyeleni" }
+  ],
+  "079": [
+    { "code": "07901", "name": "Mitaboni" },
+    { "code": "07902", "name": "Kathiani Central" },
+    { "code": "07903", "name": "Upper Kaewa/Iveti" },
+    { "code": "07904", "name": "Lower Kaewa/Kaani" }
+  ],
+  "080": [
+    { "code": "08001", "name": "Athi River" },
+    { "code": "08002", "name": "Kinanie" },
+    { "code": "08003", "name": "Muthwani" },
+    { "code": "08004", "name": "Syokimau/Mulolongo" }
+  ],
+  "081": [
+    { "code": "08101", "name": "Kalama" },
+    { "code": "08102", "name": "Mua" },
+    { "code": "08103", "name": "Mutituni" },
+    { "code": "08104", "name": "Machakos Central" },
+    { "code": "08105", "name": "Mumbuni North" },
+    { "code": "08106", "name": "Muvuti/Kiima-Kimwe" },
+    { "code": "08107", "name": "Kola" }
+  ],
+  "082": [
+    { "code": "08201", "name": "Mbiuni" },
+    { "code": "08202", "name": "Makutano/Mwala" },
+    { "code": "08203", "name": "Masii" },
+    { "code": "08204", "name": "Muthetheni" },
+    { "code": "08205", "name": "Wamunyu" },
+    { "code": "08206", "name": "Kibauni" }
+  ],
+  "083": [
+    { "code": "08301", "name": "Tulimani" },
+    { "code": "08302", "name": "Mbooni" },
+    { "code": "08303", "name": "Kithungo/Kitundu" },
+    { "code": "08304", "name": "Kisau/Kiteta" },
+    { "code": "08305", "name": "Waia/Kako" },
+    { "code": "08306", "name": "Kalawa" }
+  ],
+  "084": [
+    { "code": "08401", "name": "Kasikeu" },
+    { "code": "08402", "name": "Mukaa" },
+    { "code": "08403", "name": "Kiima Kiu/Kalanzoni" }
+  ],
+  "085": [
+    { "code": "08501", "name": "Ukia" },
+    { "code": "08502", "name": "Kee" },
+    { "code": "08503", "name": "Kivani" },
+    { "code": "08504", "name": "Nguu/Masumba" }
+  ],
+  "086": [
+    { "code": "08601", "name": "Nzaui/Kilili/Kalamba" },
+    { "code": "08602", "name": "Wote" },
+    { "code": "08603", "name": "Muvau/Kikumini" },
+    { "code": "08604", "name": "Mavindini" },
+    { "code": "08605", "name": "Kitise/Kithuki" }
+  ],
+  "087": [
+    { "code": "08701", "name": "Makindu" },
+    { "code": "08702", "name": "Nguumo" },
+    { "code": "08703", "name": "Kikumbulyu North" },
+    { "code": "08704", "name": "Kikumbulyu South" },
+    { "code": "08705", "name": "Nguu/Masumba" }
+  ],
+  "088": [
+    { "code": "08801", "name": "Mumoni" },
+    { "code": "08802", "name": "Mtito Andei" },
+    { "code": "08803", "name": "Ivingoni/Nzambani" },
+    { "code": "08804", "name": "Thange" }
+  ],
+  "089": [
+    { "code": "08901", "name": "Engineer" },
+    { "code": "08902", "name": "Gathara" },
+    { "code": "08903", "name": "North Kinangop" },
+    { "code": "08904", "name": "Murungaru" },
+    { "code": "08905", "name": "Njabini/Kiburu" },
+    { "code": "08906", "name": "Nyakio" },
+    { "code": "08907", "name": "Githabai" },
+    { "code": "08908", "name": "Magumu" }
+  ],
+  "090": [
+    { "code": "09001", "name": "Wanjohi" },
+    { "code": "09002", "name": "Kipipiri" },
+    { "code": "09003", "name": "Geta" },
+    { "code": "09004", "name": "Miharati" }
+  ],
+  "091": [
+    { "code": "09101", "name": "Gathanji" },
+    { "code": "09102", "name": "Gatimu" },
+    { "code": "09103", "name": "Weru" },
+    { "code": "09104", "name": "Rurii" },
+    { "code": "09105", "name": "Kaimbaga" }
+  ],
+  "092": [
+    { "code": "09201", "name": "Ol Kalou" },
+    { "code": "09202", "name": "Kanjuiri Ridge" },
+    { "code": "09203", "name": "Ndunyu Njeru" },
+    { "code": "09204", "name": "Kangui" }
+  ],
+  "093": [
+    { "code": "09301", "name": "Kiriita" },
+    { "code": "09302", "name": "Leshau Pondo" },
+    { "code": "09303", "name": "Shamata" },
+    { "code": "09304", "name": "Ndaragwa" },
+    { "code": "09305", "name": "Central" }
+  ],
+  "094": [
+    { "code": "09401", "name": "Dedan Kimathi" },
+    { "code": "09402", "name": "Wamagana" },
+    { "code": "09403", "name": "Aguthi/Gaaki" }
+  ],
+  "095": [
+    { "code": "09501", "name": "Mweiga" },
+    { "code": "09502", "name": "Naromoru Kiamathaga" },
+    { "code": "09503", "name": "Mwiyogo/Endarasha" },
+    { "code": "09504", "name": "Mugunda" },
+    { "code": "09505", "name": "Gatarakwa" },
+    { "code": "09506", "name": "Thegu River" },
+    { "code": "09507", "name": "Kabaru" },
+    { "code": "09508", "name": "Gakawa" }
+  ],
+  "096": [
+    { "code": "09601", "name": "Ruguru" },
+    { "code": "09602", "name": "Magutu" },
+    { "code": "09603", "name": "Iriaini" },
+    { "code": "09604", "name": "Konyu" },
+    { "code": "09605", "name": "Kirimukuyu" },
+    { "code": "09606", "name": "Karatina Town" }
+  ],
+  "097": [
+    { "code": "09701", "name": "Mahiga" },
+    { "code": "09702", "name": "Iria-ini" },
+    { "code": "09703", "name": "Chinga" },
+    { "code": "09704", "name": "Karima" }
+  ],
+  "098": [
+    { "code": "09801", "name": "Gikondi" },
+    { "code": "09802", "name": "Rugi" },
+    { "code": "09803", "name": "Mukurwe-ini West" },
+    { "code": "09804", "name": "Mukurwe-ini Central" }
+  ],
+  "099": [
+    { "code": "09901", "name": "Kiganjo/Mathari" },
+    { "code": "09902", "name": "Rware" },
+    { "code": "09903", "name": "Gatitu/Muruguru" },
+    { "code": "09904", "name": "Ruring'u" },
+    { "code": "09905", "name": "Kamakwa/Mukaro" }
+  ],
+  "100": [
+    { "code": "10001", "name": "Mutithi" },
+    { "code": "10002", "name": "Kangai" },
+    { "code": "10003", "name": "Thiba" },
+    { "code": "10004", "name": "Wamumu" },
+    { "code": "10005", "name": "Nyangati" },
+    { "code": "10006", "name": "Murinduko" },
+    { "code": "10007", "name": "Gathigiriri" },
+    { "code": "10008", "name": "Tebere" }
+  ],
+  "101": [
+    { "code": "10101", "name": "Kabare" },
+    { "code": "10102", "name": "Baragwi" },
+    { "code": "10103", "name": "Njukiini" },
+    { "code": "10104", "name": "Ngariama" },
+    { "code": "10105", "name": "Karumandi" }
+  ],
+  "102": [
+    { "code": "10201", "name": "Mukure" },
+    { "code": "10202", "name": "Kiine" },
+    { "code": "10203", "name": "Kariti" }
+  ],
+  "103": [
+    { "code": "10301", "name": "Mutira" },
+    { "code": "10302", "name": "Kanyeki-ini" },
+    { "code": "10303", "name": "Kerugoya" },
+    { "code": "10304", "name": "Inoi" }
+  ],
+  "104": [
+    { "code": "10401", "name": "Kangema" },
+    { "code": "10402", "name": "Muguru" },
+    { "code": "10403", "name": "Kanyenya-ini" },
+    { "code": "10404", "name": "Rwathia" }
+  ],
+  "105": [
+    { "code": "10501", "name": "Gitugi" },
+    { "code": "10502", "name": "Kiru" },
+    { "code": "10503", "name": "Kamacharia" }
+  ],
+  "106": [
+    { "code": "10601", "name": "Wangu" },
+    { "code": "10602", "name": "Mugoiri" },
+    { "code": "10603", "name": "Mbiri" },
+    { "code": "10604", "name": "Township" },
+    { "code": "10605", "name": "Murarandia" },
+    { "code": "10606", "name": "Gaturi" }
+  ],
+  "107": [
+    { "code": "10701", "name": "Kahumbu" },
+    { "code": "10702", "name": "Muthithi" },
+    { "code": "10703", "name": "Kigumo" },
+    { "code": "10704", "name": "Kangari" },
+    { "code": "10705", "name": "Kinyona" }
+  ],
+  "108": [
+    { "code": "10801", "name": "Kimorori/Wempa" },
+    { "code": "10802", "name": "Makuyu" },
+    { "code": "10803", "name": "Kambiti" },
+    { "code": "10804", "name": "Kamahuha" },
+    { "code": "10805", "name": "Ichagaki" },
+    { "code": "10806", "name": "Nginda" }
+  ],
+  "109": [
+    { "code": "10901", "name": "Ng'araria" },
+    { "code": "10902", "name": "Muruka" },
+    { "code": "10903", "name": "Kagundu-ini" },
+    { "code": "10904", "name": "Gaichanjiru" },
+    { "code": "10905", "name": "Ithiru" },
+    { "code": "10906", "name": "Ruchu" }
+  ],
+  "110": [
+    { "code": "11001", "name": "Ithanga" },
+    { "code": "11002", "name": "Kakuzi/Mitubiri" },
+    { "code": "11003", "name": "Mugumo-ini" },
+    { "code": "11004", "name": "Kihumbu-ini" },
+    { "code": "11005", "name": "Gatanga" },
+    { "code": "11006", "name": "Kariara" }
+  ],
+  "111": [
+    { "code": "11101", "name": "Kiamwangi" },
+    { "code": "11102", "name": "Kiganjo" },
+    { "code": "11103", "name": "Ndarugu" },
+    { "code": "11104", "name": "Ngenda" }
+  ],
+  "112": [
+    { "code": "11201", "name": "Gituamba" },
+    { "code": "11202", "name": "Githobokoni" },
+    { "code": "11203", "name": "Chania" },
+    { "code": "11204", "name": "Mang'u" }
+  ],
+  "113": [
+    { "code": "11301", "name": "Murera" },
+    { "code": "11302", "name": "Theta" },
+    { "code": "11303", "name": "Juja" },
+    { "code": "11304", "name": "Witeithie" },
+    { "code": "11305", "name": "Kalimoni" }
+  ],
+  "114": [
+    { "code": "11401", "name": "Township" },
+    { "code": "11402", "name": "Kamenu" },
+    { "code": "11403", "name": "Hospital" },
+    { "code": "11404", "name": "Gatuanyaga" },
+    { "code": "11405", "name": "Ngoliba" }
+  ],
+  "115": [
+    { "code": "11501", "name": "Gitothua" },
+    { "code": "11502", "name": "Biashara" },
+    { "code": "11503", "name": "Gatongora" },
+    { "code": "11504", "name": "Kahawa Sukari" },
+    { "code": "11505", "name": "Kahawa Wendani" },
+    { "code": "11506", "name": "Kiuu" },
+    { "code": "11507", "name": "Mwiki" },
+    { "code": "11508", "name": "Mwihoko" }
+  ],
+  "116": [
+    { "code": "11601", "name": "Githunguri" },
+    { "code": "11602", "name": "Githiga" },
+    { "code": "11603", "name": "Ikinu" },
+    { "code": "11604", "name": "Ngewa" },
+    { "code": "11605", "name": "Komothai" }
+  ],
+  "117": [
+    { "code": "11701", "name": "Ting'ang'a" },
+    { "code": "11702", "name": "Ndumberi" },
+    { "code": "11703", "name": "Riabai" },
+    { "code": "11704", "name": "Township" }
+  ],
+  "118": [
+    { "code": "11801", "name": "Cianda" },
+    { "code": "11802", "name": "Karuri" },
+    { "code": "11803", "name": "Ndenderu" },
+    { "code": "11804", "name": "Muchatha" },
+    { "code": "11805", "name": "Kihara" }
+  ],
+  "119": [
+    { "code": "11901", "name": "Gitaru" },
+    { "code": "11902", "name": "Muguga" },
+    { "code": "11903", "name": "Nyathuna" },
+    { "code": "11904", "name": "Kabete" },
+    { "code": "11905", "name": "Uthiru" }
+  ],
+  "120": [
+    { "code": "12001", "name": "Karai" },
+    { "code": "12002", "name": "Nachu" },
+    { "code": "12003", "name": "Sigona" },
+    { "code": "12004", "name": "Kikuyu" },
+    { "code": "12005", "name": "Kinoo" }
+  ],
+  "121": [
+    { "code": "12101", "name": "Bibirioni" },
+    { "code": "12102", "name": "Limuru Central" },
+    { "code": "12103", "name": "Ndeiya" },
+    { "code": "12104", "name": "Limuru East" },
+    { "code": "12105", "name": "Ngecha Tigoni" }
+  ],
+  "122": [
+    { "code": "12201", "name": "Kinale" },
+    { "code": "12202", "name": "Kijabe" },
+    { "code": "12203", "name": "Nyanduma" },
+    { "code": "12204", "name": "Kamburu" },
+    { "code": "12205", "name": "Lari/Kirenga" }
+  ],
+  "123": [
+    { "code": "12301", "name": "Kaeris" },
+    { "code": "12302", "name": "Lake Zone" },
+    { "code": "12303", "name": "Lapur" },
+    { "code": "12304", "name": "Kaaleng/Kaikor" },
+    { "code": "12305", "name": "Kibish" },
+    { "code": "12306", "name": "Nakalale" }
+  ],
+  "124": [
+    { "code": "12401", "name": "Kakuma" },
+    { "code": "12402", "name": "Lopur" },
+    { "code": "12403", "name": "Letea" },
+    { "code": "12404", "name": "Songot" },
+    { "code": "12405", "name": "Kalobeyei" },
+    { "code": "12406", "name": "Lokichoggio" },
+    { "code": "12407", "name": "Nanaam" }
+  ],
+  "125": [
+    { "code": "12501", "name": "Kerio Delta" },
+    { "code": "12502", "name": "Kang'atotha" },
+    { "code": "12503", "name": "Kalokol" },
+    { "code": "12504", "name": "Lodwar Township" },
+    { "code": "12505", "name": "Kanamkemer" }
+  ],
+  "126": [
+    { "code": "12601", "name": "Kotaruk/Lobei" },
+    { "code": "12602", "name": "Turkwel" },
+    { "code": "12603", "name": "Loima" },
+    { "code": "12604", "name": "Lokiriama/Lorengippi" }
+  ],
+  "127": [
+    { "code": "12701", "name": "Kaputir" },
+    { "code": "12702", "name": "Katilu" },
+    { "code": "12703", "name": "Lobokat" },
+    { "code": "12704", "name": "Kalapata" },
+    { "code": "12705", "name": "Lokichar" }
+  ],
+  "128": [
+    { "code": "12801", "name": "Kapedo/Napeitom" },
+    { "code": "12802", "name": "Katilia" },
+    { "code": "12803", "name": "Lokori/Kochodin" }
+  ],
+  "129": [
+    { "code": "12901", "name": "Riwo" },
+    { "code": "12902", "name": "Kapenguria" },
+    { "code": "12903", "name": "Mnagei" },
+    { "code": "12904", "name": "Siyoi" },
+    { "code": "12905", "name": "Endugh" },
+    { "code": "12906", "name": "Sook" }
+  ],
+  "130": [
+    { "code": "13001", "name": "Sekerr" },
+    { "code": "13002", "name": "Masool" },
+    { "code": "13003", "name": "Lomut" },
+    { "code": "13004", "name": "Weiwei" }
+  ],
+  "131": [
+    { "code": "13101", "name": "Suam" },
+    { "code": "13102", "name": "Kodich" },
+    { "code": "13103", "name": "Kasei" },
+    { "code": "13104", "name": "Kapchok" },
+    { "code": "13105", "name": "Kiwawa" },
+    { "code": "13106", "name": "Alale" }
+  ],
+  "132": [
+    { "code": "13201", "name": "Chepareria" },
+    { "code": "13202", "name": "Batei" },
+    { "code": "13203", "name": "Lelan" },
+    { "code": "13204", "name": "Tapach" }
+  ],
+  "133": [
+    { "code": "13301", "name": "Lodokejek" },
+    { "code": "13302", "name": "Suguta Marmar" },
+    { "code": "13303", "name": "Maralal" },
+    { "code": "13304", "name": "Loosuk" },
+    { "code": "13305", "name": "Poro" }
+  ],
+  "134": [
+    { "code": "13401", "name": "El-barta" },
+    { "code": "13402", "name": "Nachola" },
+    { "code": "13403", "name": "Ndoto" },
+    { "code": "13404", "name": "Nyiro" },
+    { "code": "13405", "name": "Angata Nanyokie" },
+    { "code": "13406", "name": "Baawa" }
+  ],
+  "135": [
+    { "code": "13501", "name": "Waso" },
+    { "code": "13502", "name": "Wamba West" },
+    { "code": "13503", "name": "Wamba East" },
+    { "code": "13504", "name": "Wamba North" }
+  ],
+  "136": [
+    { "code": "13601", "name": "Kwanza" },
+    { "code": "13602", "name": "Keiyo" },
+    { "code": "13603", "name": "Bidii" },
+    { "code": "13604", "name": "Kapomboi" }
+  ],
+  "137": [
+    { "code": "13701", "name": "Endebess" },
+    { "code": "13702", "name": "Chepchoina" },
+    { "code": "13703", "name": "Matumbei" }
+  ],
+  "138": [
+    { "code": "13801", "name": "Kinyoro" },
+    { "code": "13802", "name": "Matisi" },
+    { "code": "13803", "name": "Tuwani" },
+    { "code": "13804", "name": "Saboti" },
+    { "code": "13805", "name": "Machewa" }
+  ],
+  "139": [
+    { "code": "13901", "name": "Kiminini" },
+    { "code": "13902", "name": "Waitaluk" },
+    { "code": "13903", "name": "Sirende" },
+    { "code": "13904", "name": "Hospital" },
+    { "code": "13905", "name": "Sikhendu" },
+    { "code": "13906", "name": "Nabiswa" }
+  ],
+  "140": [
+    { "code": "14001", "name": "Sinyerere" },
+    { "code": "14002", "name": "Makutano" },
+    { "code": "14003", "name": "Kaplamai" },
+    { "code": "14004", "name": "Motosiet" },
+    { "code": "14005", "name": "Cherangany/Suwerwa" },
+    { "code": "14006", "name": "Chepsiro/Kiptoror" },
+    { "code": "14007", "name": "Sitatunga" }
+  ],
+  "141": [
+    { "code": "14101", "name": "Moi's Bridge" },
+    { "code": "14102", "name": "Kapkures" },
+    { "code": "14103", "name": "Ziwa" },
+    { "code": "14104", "name": "Segero/Barsombe" },
+    { "code": "14105", "name": "Kipsomba" },
+    { "code": "14106", "name": "Soy" },
+    { "code": "14107", "name": "Kuinet/Kapsuswa" }
+  ],
+  "142": [
+    { "code": "14201", "name": "Ngenyilel" },
+    { "code": "14202", "name": "Tapsagoi" },
+    { "code": "14203", "name": "Kamagut" },
+    { "code": "14204", "name": "Kiplombe" },
+    { "code": "14205", "name": "Kapsaos" },
+    { "code": "14206", "name": "Huruma" }
+  ],
+  "143": [
+    { "code": "14301", "name": "Tembelio" },
+    { "code": "14302", "name": "Sergoit" },
+    { "code": "14303", "name": "Karuna/Meibeki" },
+    { "code": "14304", "name": "Moiben" },
+    { "code": "14305", "name": "Kimumu" }
+  ],
+  "144": [
+    { "code": "14401", "name": "Kapsoya" },
+    { "code": "14402", "name": "Kaptagat" },
+    { "code": "14403", "name": "Ainabkoi/Olare" }
+  ],
+  "145": [
+    { "code": "14501", "name": "Simat/Kapseret" },
+    { "code": "14502", "name": "Kipkenyo" },
+    { "code": "14503", "name": "Ngeria" },
+    { "code": "14504", "name": "Megun" },
+    { "code": "14505", "name": "Langas" }
+  ],
+  "146": [
+    { "code": "14601", "name": "Racecourse" },
+    { "code": "14602", "name": "Cheptiret/Kipchamo" },
+    { "code": "14603", "name": "Tulwet/Chuiyat" },
+    { "code": "14604", "name": "Tarakwa" }
+  ],
+  "147": [
+    { "code": "14701", "name": "Embobut/Embolot" },
+    { "code": "14702", "name": "Endo" },
+    { "code": "14703", "name": "Kapyego" },
+    { "code": "14704", "name": "Sambirir" }
+  ],
+  "148": [
+    { "code": "14801", "name": "Lelan" },
+    { "code": "14802", "name": "Sengwer" },
+    { "code": "14803", "name": "Cherang'any/Chebororwa" },
+    { "code": "14804", "name": "Moiben/Kuserwo" },
+    { "code": "14805", "name": "Kapsowar" },
+    { "code": "14806", "name": "Arror" }
+  ],
+  "149": [
+    { "code": "14901", "name": "Emsoo" },
+    { "code": "14902", "name": "Kamariny" },
+    { "code": "14903", "name": "Kapchemutwa" },
+    { "code": "14904", "name": "Tambach" }
+  ],
+  "150": [
+    { "code": "15001", "name": "Kaptarakwa" },
+    { "code": "15002", "name": "Chepkorio" },
+    { "code": "15003", "name": "Soy North" },
+    { "code": "15004", "name": "Soy South" },
+    { "code": "15005", "name": "Kabiemit" },
+    { "code": "15006", "name": "Metkei" }
+  ],
+  "151": [
+    { "code": "15101", "name": "Songhor/Soba" },
+    { "code": "15102", "name": "Tindiret" },
+    { "code": "15103", "name": "Chemelil/Chemase" },
+    { "code": "15104", "name": "Kapsimotwo" }
+  ],
+  "152": [
+    { "code": "15201", "name": "Kabwareng" },
+    { "code": "15202", "name": "Terik" },
+    { "code": "15203", "name": "Kemeloi-Maraba" },
+    { "code": "15204", "name": "Kobujoi" },
+    { "code": "15205", "name": "Kaptumo-Kaboi" },
+    { "code": "15206", "name": "Koyo-Ndurio" }
+  ],
+  "153": [
+    { "code": "15301", "name": "Nandi Hills" },
+    { "code": "15302", "name": "Chepkunyuk" },
+    { "code": "15303", "name": "Ol'lessos" },
+    { "code": "15304", "name": "Kapchorua" }
+  ],
+  "154": [
+    { "code": "15401", "name": "Chemundu/Kapng'etuny" },
+    { "code": "15402", "name": "Kosirai" },
+    { "code": "15403", "name": "Lelmokwo/Ngechek" },
+    { "code": "15404", "name": "Kaptel/Kamoiywo" },
+    { "code": "15405", "name": "Kiptuya" }
+  ],
+  "155": [
+    { "code": "15501", "name": "Chepkumia" },
+    { "code": "15502", "name": "Kapkangani" },
+    { "code": "15503", "name": "Kapsabet" },
+    { "code": "15504", "name": "Kilibwoni" }
+  ],
+  "156": [
+    { "code": "15601", "name": "Chepterwai" },
+    { "code": "15602", "name": "Kipkaren" },
+    { "code": "15603", "name": "Kurgung/Surungai" },
+    { "code": "15604", "name": "Kabiyet" },
+    { "code": "15605", "name": "Ndalat" },
+    { "code": "15606", "name": "Sangalo/Kebulonik" }
+  ],
+  "157": [
+    { "code": "15701", "name": "Tirioko" },
+    { "code": "15702", "name": "Kolowa" },
+    { "code": "15703", "name": "Ribkwo" },
+    { "code": "15704", "name": "Silale" },
+    { "code": "15705", "name": "Loiyamorock" },
+    { "code": "15706", "name": "Tangulbei/Korossi" },
+    { "code": "15707", "name": "Churo/Amaya" }
+  ],
+  "158": [
+    { "code": "15801", "name": "Barwessa" },
+    { "code": "15802", "name": "Kabartonjo" },
+    { "code": "15803", "name": "Saimo/Kipsaraman" },
+    { "code": "15804", "name": "Saimo/Soi" },
+    { "code": "15805", "name": "Bartabwa" }
+  ],
+  "159": [
+    { "code": "15901", "name": "Kabarnet" },
+    { "code": "15902", "name": "Sacho" },
+    { "code": "15903", "name": "Tenges" },
+    { "code": "15904", "name": "Ewalel/Chapchap" },
+    { "code": "15905", "name": "Kapropita" }
+  ],
+  "160": [
+    { "code": "16001", "name": "Marigat" },
+    { "code": "16002", "name": "Ilchamus" },
+    { "code": "16003", "name": "Mochongoi" },
+    { "code": "16004", "name": "Mukutani" }
+  ],
+  "161": [
+    { "code": "16101", "name": "Mogotio" },
+    { "code": "16102", "name": "Emining" },
+    { "code": "16103", "name": "Kisanana" },
+    { "code": "16104", "name": "Lembus Kwen" }
+  ],
+  "162": [
+    { "code": "16201", "name": "Lembus" },
+    { "code": "16202", "name": "Lembus Perkerra" },
+    { "code": "16203", "name": "Koibatek" },
+    { "code": "16204", "name": "Ravine" },
+    { "code": "16205", "name": "Mumberes/Maji Mazuri" },
+    { "code": "16206", "name": "Lembus/Mogotio" }
+  ],
+  "163": [
+    { "code": "16301", "name": "Ol Moran" },
+    { "code": "16302", "name": "Rumuruti Township" },
+    { "code": "16303", "name": "Githiga" },
+    { "code": "16304", "name": "Marmanet" },
+    { "code": "16305", "name": "Igwamiti" },
+    { "code": "16306", "name": "Salama" }
+  ],
+  "164": [
+    { "code": "16401", "name": "Ngobit" },
+    { "code": "16402", "name": "Tigithi" },
+    { "code": "16403", "name": "Thingithu" },
+    { "code": "16404", "name": "Nanyuki" },
+    { "code": "16405", "name": "Umande" }
+  ],
+  "165": [
+    { "code": "16501", "name": "Sosian" },
+    { "code": "16502", "name": "Segera" },
+    { "code": "16503", "name": "Mugogodo" },
+    { "code": "16504", "name": "Mukogondo East" },
+    { "code": "16505", "name": "Mukogondo West" }
+  ],
+  "166": [
+    { "code": "16601", "name": "Mariashoni" },
+    { "code": "16602", "name": "Elburgon" },
+    { "code": "16603", "name": "Turi" },
+    { "code": "16604", "name": "Molo" }
+  ],
+  "167": [
+    { "code": "16701", "name": "Mau Narok" },
+    { "code": "16702", "name": "Mauche" },
+    { "code": "16703", "name": "Kihingo" },
+    { "code": "16704", "name": "Nessuit" },
+    { "code": "16705", "name": "Lare" },
+    { "code": "16706", "name": "Njoro" }
+  ],
+  "168": [
+    { "code": "16801", "name": "Biashara" },
+    { "code": "16802", "name": "Hells Gate" },
+    { "code": "16803", "name": "Lake View" },
+    { "code": "16804", "name": "Mai Mahiu" },
+    { "code": "16805", "name": "Maiella" },
+    { "code": "16806", "name": "Olkaria" },
+    { "code": "16807", "name": "Naivasha East" },
+    { "code": "16808", "name": "Viwanda" }
+  ],
+  "169": [
+    { "code": "16901", "name": "Gilgil" },
+    { "code": "16902", "name": "Elementaita" },
+    { "code": "16903", "name": "Mbaruk/Eburu" },
+    { "code": "16904", "name": "Malewa West" },
+    { "code": "16905", "name": "Murindati" }
+  ],
+  "170": [
+    { "code": "17001", "name": "Amalo" },
+    { "code": "17002", "name": "Keringet" },
+    { "code": "17003", "name": "Kiptagich" },
+    { "code": "17004", "name": "Tinet" }
+  ],
+  "171": [
+    { "code": "17101", "name": "Kiptororo" },
+    { "code": "17102", "name": "Nyota" },
+    { "code": "17103", "name": "Sirikwa" },
+    { "code": "17104", "name": "Kamara" }
+  ],
+  "172": [
+    { "code": "17201", "name": "Subukia" },
+    { "code": "17202", "name": "Waseges" },
+    { "code": "17203", "name": "Kabazi" }
+  ],
+  "173": [
+    { "code": "17301", "name": "Menengai West" },
+    { "code": "17302", "name": "Soin" },
+    { "code": "17303", "name": "Visoi" },
+    { "code": "17304", "name": "Mosop" },
+    { "code": "17305", "name": "Solai" }
+  ],
+  "174": [
+    { "code": "17401", "name": "Dundori" },
+    { "code": "17402", "name": "Kabatini" },
+    { "code": "17403", "name": "Kiamaina" },
+    { "code": "17404", "name": "Lanet/Umoja" },
+    { "code": "17405", "name": "Bahati" }
+  ],
+  "175": [
+    { "code": "17501", "name": "Barut" },
+    { "code": "17502", "name": "London" },
+    { "code": "17503", "name": "Kaptembwo" },
+    { "code": "17504", "name": "Kapkures" },
+    { "code": "17505", "name": "Rhoda" },
+    { "code": "17506", "name": "Shaabab" }
+  ],
+  "176": [
+    { "code": "17601", "name": "Biashara" },
+    { "code": "17602", "name": "Kivumbini" },
+    { "code": "17603", "name": "Flamingo" },
+    { "code": "17604", "name": "Menengai" },
+    { "code": "17605", "name": "Nakuru East" }
+  ],
+  "177": [
+    { "code": "17701", "name": "Kilgoris Central" },
+    { "code": "17702", "name": "Keyian" },
+    { "code": "17703", "name": "Angata Barikoi" },
+    { "code": "17704", "name": "Shankoe" },
+    { "code": "17705", "name": "Kimintet" },
+    { "code": "17706", "name": "Lolgorian" }
+  ],
+  "178": [
+    { "code": "17801", "name": "Ilkerin" },
+    { "code": "17802", "name": "Ololmasani" },
+    { "code": "17803", "name": "Mogondo" },
+    { "code": "17804", "name": "Kapsasian" }
+  ],
+  "179": [
+    { "code": "17901", "name": "Olpusimoru" },
+    { "code": "17902", "name": "Olokurto" },
+    { "code": "17903", "name": "Narok Town" },
+    { "code": "17904", "name": "Nkareta" },
+    { "code": "17905", "name": "Olorropil" },
+    { "code": "17906", "name": "Melili" }
+  ],
+  "180": [
+    { "code": "18001", "name": "Mosiro" },
+    { "code": "18002", "name": "Ildamat" },
+    { "code": "18003", "name": "Keekonyokie" },
+    { "code": "18004", "name": "Suswa" }
+  ],
+  "181": [
+    { "code": "18101", "name": "Melelo" },
+    { "code": "18102", "name": "Loita" },
+    { "code": "18103", "name": "Sogoo" },
+    { "code": "18104", "name": "Sagamian" }
+  ],
+  "182": [
+    { "code": "18201", "name": "Mara" },
+    { "code": "18202", "name": "Siana" },
+    { "code": "18203", "name": "Naikarra" },
+    { "code": "18204", "name": "Ololulunga" }
+  ],
+  "183": [
+    { "code": "18301", "name": "Ngong" },
+    { "code": "18302", "name": "Ongata Rongai" },
+    { "code": "18303", "name": "Nkaimurunya" },
+    { "code": "18304", "name": "Oloolua" },
+    { "code": "18305", "name": "Kiserian" }
+  ],
+  "184": [
+    { "code": "18401", "name": "Purko" },
+    { "code": "18402", "name": "Ildamat" },
+    { "code": "18403", "name": "Dalalekutuk" },
+    { "code": "18404", "name": "Matapato North" },
+    { "code": "18405", "name": "Matapato South" }
+  ],
+  "185": [
+    { "code": "18501", "name": "Kaputiei North" },
+    { "code": "18502", "name": "Kitengela" },
+    { "code": "18503", "name": "Oloosirkon/Sholinke" },
+    { "code": "18504", "name": "Kenyawa-Poka" },
+    { "code": "18505", "name": "Imaroro" }
+  ],
+  "186": [
+    { "code": "18601", "name": "Keekonyokie" },
+    { "code": "18602", "name": "Iloodokilani" },
+    { "code": "18603", "name": "Magadi" },
+    { "code": "18604", "name": "Ewuaso Oonkidong'i" }
+  ],
+  "187": [
+    { "code": "18701", "name": "Mosiro" },
+    { "code": "18702", "name": "Entonet/Lenkisim" },
+    { "code": "18703", "name": "Mbirikani/Eselenkei" },
+    { "code": "18704", "name": "Kuku" },
+    { "code": "18705", "name": "Rombo" },
+    { "code": "18706", "name": "Kimana" }
+  ],
+  "188": [
+    { "code": "18801", "name": "Londiani" },
+    { "code": "18802", "name": "Kedowa/Kimugul" },
+    { "code": "18803", "name": "Chepseon" },
+    { "code": "18804", "name": "Tendeno/Sorget" }
+  ],
+  "189": [
+    { "code": "18901", "name": "Kunyak" },
+    { "code": "18902", "name": "Kamasian" },
+    { "code": "18903", "name": "Kipkelion" },
+    { "code": "18904", "name": "Chilchila" }
+  ],
+  "190": [
+    { "code": "19001", "name": "Kapsoit" },
+    { "code": "19002", "name": "Ainamoi" },
+    { "code": "19003", "name": "Kapkugerwet" },
+    { "code": "19004", "name": "Kipchebor" },
+    { "code": "19005", "name": "Kipchimchim" },
+    { "code": "19006", "name": "Kapsaos" }
+  ],
+  "191": [
+    { "code": "19101", "name": "Kisiara" },
+    { "code": "19102", "name": "Tebesonik" },
+    { "code": "19103", "name": "Cheboin" },
+    { "code": "19104", "name": "Chemosot" },
+    { "code": "19105", "name": "Litein" },
+    { "code": "19106", "name": "Cheplanget" },
+    { "code": "19107", "name": "Kapkatet" }
+  ],
+  "192": [
+    { "code": "19201", "name": "Waldai" },
+    { "code": "19202", "name": "Kabianga" },
+    { "code": "19203", "name": "Cheptororiet/Seretut" },
+    { "code": "19204", "name": "Chaik" },
+    { "code": "19205", "name": "Kapsuser" }
+  ],
+  "193": [
+    { "code": "19301", "name": "Sigowet" },
+    { "code": "19302", "name": "Kaplelartet" },
+    { "code": "19303", "name": "Soliat" },
+    { "code": "19304", "name": "Soin" }
+  ],
+  "194": [
+    { "code": "19401", "name": "Ndanai/Abosi" },
+    { "code": "19402", "name": "Chemagel" },
+    { "code": "19403", "name": "Kipsonoi" },
+    { "code": "19404", "name": "Kapletundo" },
+    { "code": "19405", "name": "Rongena/Manaret" }
+  ],
+  "195": [
+    { "code": "19501", "name": "Siongiroi" },
+    { "code": "19502", "name": "Chebunyo" },
+    { "code": "19503", "name": "Sigor" },
+    { "code": "19504", "name": "Kong'asis" },
+    { "code": "19505", "name": "Nyangores" }
+  ],
+  "196": [
+    { "code": "19601", "name": "Longisa" },
+    { "code": "19602", "name": "Kembu" },
+    { "code": "19603", "name": "Chemaner" },
+    { "code": "19604", "name": "Merigi" },
+    { "code": "19605", "name": "Kipreres" }
+  ],
+  "197": [
+    { "code": "19701", "name": "Silibwet Township" },
+    { "code": "19702", "name": "Ndaraweta" },
+    { "code": "19703", "name": "Singorwet" },
+    { "code": "19704", "name": "Chesoen" },
+    { "code": "19705", "name": "Mutarakwa" }
+  ],
+  "198": [
+    { "code": "19801", "name": "Kimulot" },
+    { "code": "19802", "name": "Mogogosiek" },
+    { "code": "19803", "name": "Boito" },
+    { "code": "19804", "name": "Embomos" },
+    { "code": "19805", "name": "Cheptalal" }
+  ],
+  "199": [
+    { "code": "19901", "name": "Lugari" },
+    { "code": "19902", "name": "Lumakanda" },
+    { "code": "19903", "name": "Chekalini" },
+    { "code": "19904", "name": "Chevaywa" },
+    { "code": "19905", "name": "Lwandeti" },
+    { "code": "19906", "name": "Mautuma" }
+  ],
+  "200": [
+    { "code": "20001", "name": "Likuyani" },
+    { "code": "20002", "name": "Sango" },
+    { "code": "20003", "name": "Kongoni" },
+    { "code": "20004", "name": "Nzoia" },
+    { "code": "20005", "name": "Sinoko" }
+  ],
+  "201": [
+    { "code": "20101", "name": "West Kabras" },
+    { "code": "20102", "name": "Chemuche" },
+    { "code": "20103", "name": "East Kabras" },
+    { "code": "20104", "name": "Butali/Chegulo" },
+    { "code": "20105", "name": "Manda-Shivanga" },
+    { "code": "20106", "name": "Shirugu-Mugai" },
+    { "code": "20107", "name": "South Kabras" }
+  ],
+  "202": [
+    { "code": "20201", "name": "Butsotso East" },
+    { "code": "20202", "name": "Butsotso South" },
+    { "code": "20203", "name": "Butsotso Central" },
+    { "code": "20204", "name": "Sheywe" },
+    { "code": "20205", "name": "Mahiakalo" },
+    { "code": "20206", "name": "Shirere" }
+  ],
+  "203": [
+    { "code": "20301", "name": "Ingostse-Mathia" },
+    { "code": "20302", "name": "Shinoyi-Shikomari-Esumeyia" },
+    { "code": "20303", "name": "Bunyala West" },
+    { "code": "20304", "name": "Bunyala East" },
+    { "code": "20305", "name": "Bunyala Central" }
+  ],
+  "204": [
+    { "code": "20401", "name": "Mumias Central" },
+    { "code": "20402", "name": "Mumias North" },
+    { "code": "20403", "name": "Etenje" },
+    { "code": "20404", "name": "Musanda" }
+  ],
+  "205": [
+    { "code": "20501", "name": "Lubinu/Lusheya" },
+    { "code": "20502", "name": "Malaha/Isongo/Makunga" },
+    { "code": "20503", "name": "East Wanga" }
+  ],
+  "206": [
+    { "code": "20601", "name": "Koyonzo" },
+    { "code": "20602", "name": "Kholera" },
+    { "code": "20603", "name": "Mayoni" },
+    { "code": "20604", "name": "Namamali" }
+  ],
+  "207": [
+    { "code": "20701", "name": "Marama West" },
+    { "code": "20702", "name": "Marama Central" },
+    { "code": "20703", "name": "Marenyo-Shianda" },
+    { "code": "20704", "name": "Marama North" },
+    { "code": "20705", "name": "Marama South" }
+  ],
+  "208": [
+    { "code": "20801", "name": "Kisa North" },
+    { "code": "20802", "name": "Kisa East" },
+    { "code": "20803", "name": "Kisa West" },
+    { "code": "20804", "name": "Kisa Central" }
+  ],
+  "209": [
+    { "code": "20901", "name": "Isukha North" },
+    { "code": "20902", "name": "Murhanda" },
+    { "code": "20903", "name": "Isukha Central" },
+    { "code": "20904", "name": "Isukha South" },
+    { "code": "20905", "name": "Isukha East" },
+    { "code": "20906", "name": "Isukha West" }
+  ],
+  "210": [
+    { "code": "21001", "name": "Idakho North" },
+    { "code": "21002", "name": "Idakho East" },
+    { "code": "21003", "name": "Idakho South" },
+    { "code": "21004", "name": "Idakho Central" }
+  ],
+  "211": [
+    { "code": "21101", "name": "Lugaga-Wamuluma" },
+    { "code": "21102", "name": "South Maragoli" },
+    { "code": "21103", "name": "Central Maragoli" },
+    { "code": "21104", "name": "Mungoma" }
+  ],
+  "212": [
+    { "code": "21201", "name": "Lyaduywa/Izava" },
+    { "code": "21202", "name": "West Sabatia" },
+    { "code": "21203", "name": "Chavakali" },
+    { "code": "21204", "name": "North Maragoli" },
+    { "code": "21205", "name": "Wodanga" },
+    { "code": "21206", "name": "Busali" }
+  ],
+  "213": [
+    { "code": "21301", "name": "Shiru" },
+    { "code": "21302", "name": "Gisambai" },
+    { "code": "21303", "name": "Shamakhokho" },
+    { "code": "21304", "name": "Banja" },
+    { "code": "21305", "name": "Muhudu" },
+    { "code": "21306", "name": "Tambua" },
+    { "code": "21307", "name": "Jepkoyai" }
+  ],
+  "214": [
+    { "code": "21401", "name": "Luanda Township" },
+    { "code": "21402", "name": "Wemilabi" },
+    { "code": "21403", "name": "Mwibona" },
+    { "code": "21404", "name": "Luanda South" },
+    { "code": "21405", "name": "Emabungo" }
+  ],
+  "215": [
+    { "code": "21501", "name": "North East Bunyore" },
+    { "code": "21502", "name": "Central Bunyore" },
+    { "code": "21503", "name": "West Bunyore" }
+  ],
+  "216": [
+    { "code": "21601", "name": "Cheptais" },
+    { "code": "21602", "name": "Chesikaki" },
+    { "code": "21603", "name": "Chepyuk" },
+    { "code": "21604", "name": "Kapkateny" },
+    { "code": "21605", "name": "Kaptama" },
+    { "code": "21606", "name": "Elgon" }
+  ],
+  "217": [
+    { "code": "21701", "name": "Namwela" },
+    { "code": "21702", "name": "Malakisi/South Kulisiru" },
+    { "code": "21703", "name": "Lwandanyi" }
+  ],
+  "218": [
+    { "code": "21801", "name": "Kabuchai/Chwele" },
+    { "code": "21802", "name": "West Nalondo" },
+    { "code": "21803", "name": "Bwake/Luuya" },
+    { "code": "21804", "name": "Mukuyuni" }
+  ],
+  "219": [
+    { "code": "21901", "name": "South Bukusu" },
+    { "code": "21902", "name": "Bumula" },
+    { "code": "21903", "name": "Khasoko" },
+    { "code": "21904", "name": "Kabula" },
+    { "code": "21905", "name": "Kimaeti" },
+    { "code": "21906", "name": "Siboti" }
+  ],
+  "220": [
+    { "code": "22001", "name": "Bukembe West" },
+    { "code": "22002", "name": "Bukembe East" },
+    { "code": "22003", "name": "Township" },
+    { "code": "22004", "name": "Khalaba" },
+    { "code": "22005", "name": "Musikoma" },
+    { "code": "22006", "name": "Marakaru/Tuuti" },
+    { "code": "22007", "name": "Sang'alo East" },
+    { "code": "22008", "name": "Sang'alo West" }
+  ],
+  "221": [
+    { "code": "22101", "name": "Mihuu" },
+    { "code": "22102", "name": "Ndivisi" },
+    { "code": "22103", "name": "Maraka" }
+  ],
+  "222": [
+    { "code": "22201", "name": "Sitikho" },
+    { "code": "22202", "name": "Matulo" },
+    { "code": "22203", "name": "Bokoli" },
+    { "code": "22204", "name": "Misikhu" }
+  ],
+  "223": [
+    { "code": "22301", "name": "Kimilili" },
+    { "code": "22302", "name": "Kibingei" },
+    { "code": "22303", "name": "Maeni" },
+    { "code": "22304", "name": "Kamukuywa" }
+  ],
+  "224": [
+    { "code": "22401", "name": "Ndalu" },
+    { "code": "22402", "name": "Tongaren" },
+    { "code": "22403", "name": "Soysambu/Mitua" },
+    { "code": "22404", "name": "Milima" },
+    { "code": "22405", "name": "Naitiri/Kabuyefwe" }
+  ],
+  "225": [
+    { "code": "22501", "name": "Malaba Central" },
+    { "code": "22502", "name": "Malaba North" },
+    { "code": "22503", "name": "Ang'urai South" },
+    { "code": "22504", "name": "Ang'urai North" },
+    { "code": "22505", "name": "Amukura West" }
+  ],
+  "226": [
+    { "code": "22601", "name": "Amukura East" },
+    { "code": "22602", "name": "Chakol South" },
+    { "code": "22603", "name": "Chakol North" },
+    { "code": "22604", "name": "Ang'orom" }
+  ],
+  "227": [
+    { "code": "22701", "name": "Nambale Township" },
+    { "code": "22702", "name": "Bukhayo North/Walatsi" },
+    { "code": "22703", "name": "Bukhayo East" },
+    { "code": "22704", "name": "Bukhayo Central" }
+  ],
+  "228": [
+    { "code": "22801", "name": "Bukhayo West" },
+    { "code": "22802", "name": "Mayenje" },
+    { "code": "22803", "name": "Matayos South" },
+    { "code": "22804", "name": "Busibwabo" },
+    { "code": "22805", "name": "Burumba" }
+  ],
+  "229": [
+    { "code": "22901", "name": "Marachi West" },
+    { "code": "22902", "name": "Kingandole" },
+    { "code": "22903", "name": "Marachi Central" },
+    { "code": "22904", "name": "Marachi East" },
+    { "code": "22905", "name": "Marachi North" },
+    { "code": "22906", "name": "Elugulu" }
+  ],
+  "230": [
+    { "code": "23001", "name": "Nangina" },
+    { "code": "23002", "name": "Ageng'a Nanguba" },
+    { "code": "23003", "name": "Bwiri" },
+    { "code": "23004", "name": "Funyula" }
+  ],
+  "231": [
+    { "code": "23101", "name": "Bunyala Central" },
+    { "code": "23102", "name": "Bunyala North" },
+    { "code": "23103", "name": "Bunyala West" },
+    { "code": "23104", "name": "Bunyala South" }
+  ],
+  "232": [
+    { "code": "23201", "name": "West Ugenya" },
+    { "code": "23202", "name": "Ukwala" },
+    { "code": "23203", "name": "North Ugenya" },
+    { "code": "23204", "name": "East Ugenya" }
+  ],
+  "233": [
+    { "code": "23301", "name": "Sidindi" },
+    { "code": "23302", "name": "Sigomere" },
+    { "code": "23303", "name": "Ugunja" }
+  ],
+  "234": [
+    { "code": "23401", "name": "Usonga" },
+    { "code": "23402", "name": "West Alego" },
+    { "code": "23403", "name": "Central Alego" },
+    { "code": "23404", "name": "Siaya Township" },
+    { "code": "23405", "name": "North Alego" },
+    { "code": "23406", "name": "South East Alego" }
+  ],
+  "235": [
+    { "code": "23501", "name": "North Gem" },
+    { "code": "23502", "name": "West Gem" },
+    { "code": "23503", "name": "Central Gem" },
+    { "code": "23504", "name": "Yala Township" },
+    { "code": "23505", "name": "East Gem" },
+    { "code": "23506", "name": "South Gem" }
+  ],
+  "236": [
+    { "code": "23601", "name": "West Yimbo" },
+    { "code": "23602", "name": "Central Sakwa" },
+    { "code": "23603", "name": "South Sakwa" },
+    { "code": "23604", "name": "Yimbo East" },
+    { "code": "23605", "name": "West Sakwa" },
+    { "code": "23606", "name": "North Sakwa" }
+  ],
+  "237": [
+    { "code": "23701", "name": "East Asembo" },
+    { "code": "23702", "name": "West Asembo" },
+    { "code": "23703", "name": "North Uyoma" },
+    { "code": "23704", "name": "South Uyoma" },
+    { "code": "23705", "name": "Rarieda" }
+  ],
+  "238": [
+    { "code": "23801", "name": "Kajulu" },
+    { "code": "23802", "name": "Kolwa East" },
+    { "code": "23803", "name": "Manyatta 'B'" },
+    { "code": "23804", "name": "Nyalenda 'A'" },
+    { "code": "23805", "name": "Kondele" }
+  ],
+  "239": [
+    { "code": "23901", "name": "West Kisumu" },
+    { "code": "23902", "name": "North Kisumu" },
+    { "code": "23903", "name": "Kisumu Central" },
+    { "code": "23904", "name": "Kisumu West" },
+    { "code": "23905", "name": "South West Kisumu" }
+  ],
+  "240": [
+    { "code": "24001", "name": "Market Milimani" },
+    { "code": "24002", "name": "Railways" },
+    { "code": "24003", "name": "Nyalenda B" },
+    { "code": "24004", "name": "Shaurimoyo Kaloleni" },
+    { "code": "24005", "name": "Kibuye" },
+    { "code": "24006", "name": "Migosi" }
+  ],
+  "241": [
+    { "code": "24101", "name": "West Seme" },
+    { "code": "24102", "name": "Central Seme" },
+    { "code": "24103", "name": "East Seme" },
+    { "code": "24104", "name": "North Seme" }
+  ],
+  "242": [
+    { "code": "24201", "name": "East Kano/Wawidhi" },
+    { "code": "24202", "name": "Awasi/Onjiko" },
+    { "code": "24203", "name": "Ahero" },
+    { "code": "24204", "name": "Kabonyo/Kanyagwal" },
+    { "code": "24205", "name": "Kobura" }
+  ],
+  "243": [
+    { "code": "24301", "name": "Miwani" },
+    { "code": "24302", "name": "Ombeyi" },
+    { "code": "24303", "name": "Masogo/Nyang'oma" },
+    { "code": "24304", "name": "Chemelil" },
+    { "code": "24305", "name": "Muhoroni/Koru" }
+  ],
+  "244": [
+    { "code": "24401", "name": "South West Nyakach" },
+    { "code": "24402", "name": "North Nyakach" },
+    { "code": "24403", "name": "Central Nyakach" },
+    { "code": "24404", "name": "West Nyakach" },
+    { "code": "24405", "name": "South East Nyakach" }
+  ],
+  "245": [
+    { "code": "24501", "name": "West Kasipul" },
+    { "code": "24502", "name": "South Kasipul" },
+    { "code": "24503", "name": "Central Kasipul" },
+    { "code": "24504", "name": "East Kamagak" },
+    { "code": "24505", "name": "West Kamagak" }
+  ],
+  "246": [
+    { "code": "24601", "name": "Kabondo East" },
+    { "code": "24602", "name": "Kabondo West" },
+    { "code": "24603", "name": "Kokwanyo/Kakelo" },
+    { "code": "24604", "name": "Kojwach" }
+  ],
+  "247": [
+    { "code": "24701", "name": "West Karachuonyo" },
+    { "code": "24702", "name": "North Karachuonyo" },
+    { "code": "24703", "name": "Central" },
+    { "code": "24704", "name": "Kanyaluo" },
+    { "code": "24705", "name": "Kibiri" },
+    { "code": "24706", "name": "Wang'chieng" }
+  ],
+  "248": [
+    { "code": "24801", "name": "West Gem" },
+    { "code": "24802", "name": "East Gem" },
+    { "code": "24803", "name": "Kagan" },
+    { "code": "24804", "name": "Kochia" }
+  ],
+  "249": [
+    { "code": "24901", "name": "Homa Bay Central" },
+    { "code": "24902", "name": "Homa Bay Arujo" },
+    { "code": "24903", "name": "Homa Bay West" },
+    { "code": "24904", "name": "Homa Bay East" }
+  ],
+  "250": [
+    { "code": "25001", "name": "Kwabwai" },
+    { "code": "25002", "name": "Kanyamwa Kologi" },
+    { "code": "25003", "name": "Kanyamwa Kosewe" },
+    { "code": "25004", "name": "Kanyikela" },
+    { "code": "25005", "name": "Kabuoch South" },
+    { "code": "25006", "name": "Kabuoch North" },
+    { "code": "25007", "name": "Kanyadoto" }
+  ],
+  "251": [
+    { "code": "25101", "name": "Lambwe" },
+    { "code": "25102", "name": "Gwassi North" },
+    { "code": "25103", "name": "Gwassi South" },
+    { "code": "25104", "name": "Ruma-Kaksingri" },
+    { "code": "25105", "name": "Central" }
+  ],
+  "252": [
+    { "code": "25201", "name": "Gembe" },
+    { "code": "25202", "name": "Mfangano Island" },
+    { "code": "25203", "name": "Rusinga Island" },
+    { "code": "25204", "name": "Kasgunga" },
+    { "code": "25205", "name": "Lambwe" }
+  ],
+  "253": [
+    { "code": "25301", "name": "North Kamagambo" },
+    { "code": "25302", "name": "Central Kamagambo" },
+    { "code": "25303", "name": "East Kamagambo" },
+    { "code": "25304", "name": "South Kamagambo" }
+  ],
+  "254": [
+    { "code": "25401", "name": "Awendo" },
+    { "code": "25402", "name": "Dede" },
+    { "code": "25403", "name": "Sakwa" },
+    { "code": "25404", "name": "Rabuor" },
+    { "code": "25405", "name": "Sori" }
+  ],
+  "255": [
+    { "code": "25501", "name": "God Jope" },
+    { "code": "25502", "name": "Suna Central" },
+    { "code": "25503", "name": "Kakrao" },
+    { "code": "25504", "name": "Kwa" }
+  ],
+  "256": [
+    { "code": "25601", "name": "Wiga" },
+    { "code": "25602", "name": "Wasweta II" },
+    { "code": "25603", "name": "Ragana-Oruba" },
+    { "code": "25604", "name": "Wasimbete" }
+  ],
+  "257": [
+    { "code": "25701", "name": "West Kanyamkago" },
+    { "code": "25702", "name": "North Kanyamkago" },
+    { "code": "25703", "name": "Central Kanyamkago" },
+    { "code": "25704", "name": "South Kanyamkago" },
+    { "code": "25705", "name": "East Kanyamkago" }
+  ],
+  "258": [
+    { "code": "25801", "name": "Kachieng'" },
+    { "code": "25802", "name": "Kanyasa" },
+    { "code": "25803", "name": "North Kadem" },
+    { "code": "25804", "name": "Macalder/Kanyarwanda" },
+    { "code": "25805", "name": "Kaler" },
+    { "code": "25806", "name": "Got Kachola" },
+    { "code": "25807", "name": "Muhuru" }
+  ],
+  "259": [
+    { "code": "25901", "name": "Bukira East" },
+    { "code": "25902", "name": "Bukira Central/Ikerege" },
+    { "code": "25903", "name": "Isibania" },
+    { "code": "25904", "name": "Makerero" },
+    { "code": "25905", "name": "Masaba" },
+    { "code": "25906", "name": "Tagare" },
+    { "code": "25907", "name": "Nyamosense/Komosoko" }
+  ],
+  "260": [
+    { "code": "26001", "name": "Gokeharaka/Getambwega" },
+    { "code": "26002", "name": "Ntimaru West" },
+    { "code": "26003", "name": "Ntimaru East" },
+    { "code": "26004", "name": "Nyabasi East" },
+    { "code": "26005", "name": "Nyabasi West" }
+  ],
+  "261": [
+    { "code": "26101", "name": "Bomariba" },
+    { "code": "26102", "name": "Bogiakumu" },
+    { "code": "26103", "name": "Bomorenda" },
+    { "code": "26104", "name": "Riana" }
+  ],
+  "262": [
+    { "code": "26201", "name": "Tabaka" },
+    { "code": "26202", "name": "Boikang'a" },
+    { "code": "26203", "name": "Bogetenga" },
+    { "code": "26204", "name": "Borabu/Chitago" },
+    { "code": "26205", "name": "Moticho" },
+    { "code": "26206", "name": "Getenga" }
+  ],
+  "263": [
+    { "code": "26301", "name": "Bombaba Borabu" },
+    { "code": "26302", "name": "Boochi Borabu" },
+    { "code": "26303", "name": "Bokimonge" },
+    { "code": "26304", "name": "Magenche" }
+  ],
+  "264": [
+    { "code": "26401", "name": "Masige West" },
+    { "code": "26402", "name": "Masige East" },
+    { "code": "26403", "name": "Basi Central" },
+    { "code": "26404", "name": "Nyacheki" },
+    { "code": "26405", "name": "Basi Bogetaorio" },
+    { "code": "26406", "name": "Bobasi Chache" },
+    { "code": "26407", "name": "Sameta/Mokwerero" },
+    { "code": "26408", "name": "Bobasi Boitangare" }
+  ],
+  "265": [
+    { "code": "26501", "name": "Majoge Basi" },
+    { "code": "26502", "name": "Boochi/Tendere" },
+    { "code": "26503", "name": "Bosoti/Sengera" }
+  ],
+  "266": [
+    { "code": "26601", "name": "Ichuni" },
+    { "code": "26602", "name": "Nyamasibi" },
+    { "code": "26603", "name": "Masimba" },
+    { "code": "26604", "name": "Gesusu" },
+    { "code": "26605", "name": "Kiamokama" }
+  ],
+  "267": [
+    { "code": "26701", "name": "Bobaracho" },
+    { "code": "26702", "name": "Kisii Central" },
+    { "code": "26703", "name": "Keumbu" },
+    { "code": "26704", "name": "Kiogoro" },
+    { "code": "26705", "name": "Birongo" },
+    { "code": "26706", "name": "Ibeno" }
+  ],
+  "268": [
+    { "code": "26801", "name": "Monyerero" },
+    { "code": "26802", "name": "Sensi" },
+    { "code": "26803", "name": "Marani" },
+    { "code": "26804", "name": "Kegogi" }
+  ],
+  "269": [
+    { "code": "26901", "name": "Bogusero" },
+    { "code": "26902", "name": "Bogeka" },
+    { "code": "26903", "name": "Nyakoe" },
+    { "code": "26904", "name": "Kitutu Central" },
+    { "code": "26905", "name": "Nyatieko" }
+  ],
+  "270": [
+    { "code": "27001", "name": "Rigoma" },
+    { "code": "27002", "name": "Gachuba" },
+    { "code": "27003", "name": "Kemera" },
+    { "code": "27004", "name": "Magombo" },
+    { "code": "27005", "name": "Manga" },
+    { "code": "27006", "name": "Gesima" }
+  ],
+  "271": [
+    { "code": "27101", "name": "Nyamaiya" },
+    { "code": "27102", "name": "Bogichora" },
+    { "code": "27103", "name": "Bosamaro" },
+    { "code": "27104", "name": "Bonyamatuta" },
+    { "code": "27105", "name": "Township" }
+  ],
+  "272": [
+    { "code": "27201", "name": "Itibo" },
+    { "code": "27202", "name": "Bomwagamo" },
+    { "code": "27203", "name": "Bokeira" },
+    { "code": "27204", "name": "Magwagwa" },
+    { "code": "27205", "name": "Ekerenyo" }
+  ],
+  "273": [
+    { "code": "27301", "name": "Mekenene" },
+    { "code": "27302", "name": "Kiabonyoru" },
+    { "code": "27303", "name": "Esise" },
+    { "code": "27304", "name": "Nyansiongo" }
+  ],
+  "274": [
+    { "code": "27401", "name": "Kitisuru" },
+    { "code": "27402", "name": "Parklands/Highridge" },
+    { "code": "27403", "name": "Karura" },
+    { "code": "27404", "name": "Kangemi" },
+    { "code": "27405", "name": "Mountain View" }
+  ],
+  "275": [
+    { "code": "27501", "name": "Kilimani" },
+    { "code": "27502", "name": "Kawangware" },
+    { "code": "27503", "name": "Gatina" },
+    { "code": "27504", "name": "Kileleshwa" },
+    { "code": "27505", "name": "Kabiro" }
+  ],
+  "276": [
+    { "code": "27601", "name": "Mutuini" },
+    { "code": "27602", "name": "Ngando" },
+    { "code": "27603", "name": "Riruta" },
+    { "code": "27604", "name": "Uthiru/Ruthimitu" },
+    { "code": "27605", "name": "Waithaka" }
+  ],
+  "277": [
+    { "code": "27701", "name": "Karen" },
+    { "code": "27702", "name": "Nairobi West" },
+    { "code": "27703", "name": "Mugumo-ini" },
+    { "code": "27704", "name": "South C" },
+    { "code": "27705", "name": "Nyayo Highrise" }
+  ],
+  "278": [
+    { "code": "27801", "name": "Laini Saba" },
+    { "code": "27802", "name": "Lindi" },
+    { "code": "27803", "name": "Makina" },
+    { "code": "27804", "name": "Woodley/Kenyatta Golf Course" },
+    { "code": "27805", "name": "Sarang'ombe" }
+  ],
+  "279": [
+    { "code": "27901", "name": "Githurai" },
+    { "code": "27902", "name": "Kahawa West" },
+    { "code": "27903", "name": "Zimmerman" },
+    { "code": "27904", "name": "Kahawa" },
+    { "code": "27905", "name": "Roysambu" }
+  ],
+  "280": [
+    { "code": "28001", "name": "Clay City" },
+    { "code": "28002", "name": "Mwiki" },
+    { "code": "28003", "name": "Kasarani" },
+    { "code": "28004", "name": "Njiru" },
+    { "code": "28005", "name": "Ruai" }
+  ],
+  "281": [
+    { "code": "28101", "name": "Baba Dogo" },
+    { "code": "28102", "name": "Utalii" },
+    { "code": "28103", "name": "Mathare North" },
+    { "code": "28104", "name": "Lucky Summer" },
+    { "code": "28105", "name": "Korogocho" }
+  ],
+  "282": [
+    { "code": "28201", "name": "Imara Daima" },
+    { "code": "28202", "name": "Kwa Njenga" },
+    { "code": "28203", "name": "Kware" },
+    { "code": "28204", "name": "Kwa Reuben" },
+    { "code": "28205", "name": "Pipeline" }
+  ],
+  "283": [
+    { "code": "28301", "name": "Kariobangi North" },
+    { "code": "28302", "name": "Dandora Area I" },
+    { "code": "28303", "name": "Dandora Area II" },
+    { "code": "28304", "name": "Dandora Area III" },
+    { "code": "28305", "name": "Dandora Area IV" }
+  ],
+  "284": [
+    { "code": "28401", "name": "Kayole North" },
+    { "code": "28402", "name": "Kayole Central" },
+    { "code": "28403", "name": "Kayole South" },
+    { "code": "28404", "name": "Komarock" },
+    { "code": "28405", "name": "Matopeni" }
+  ],
+  "285": [
+    { "code": "28501", "name": "Upper Savannah" },
+    { "code": "28502", "name": "Lower Savannah" },
+    { "code": "28503", "name": "Embakasi" },
+    { "code": "28504", "name": "Utawala" },
+    { "code": "28505", "name": "Mihango" }
+  ],
+  "286": [
+    { "code": "28601", "name": "Umoja I" },
+    { "code": "28602", "name": "Umoja II" },
+    { "code": "28603", "name": "Mowlem" },
+    { "code": "28604", "name": "Kariobangi South" },
+    { "code": "28605", "name": "Maringo/Hamza" }
+  ],
+  "287": [
+    { "code": "28701", "name": "Viwandani" },
+    { "code": "28702", "name": "Harambee" },
+    { "code": "28703", "name": "Makongeni" },
+    { "code": "28704", "name": "Pumwani" },
+    { "code": "28705", "name": "Eastleigh North" }
+  ],
+  "288": [
+    { "code": "28801", "name": "Eastleigh South" },
+    { "code": "28802", "name": "Airbase" },
+    { "code": "28803", "name": "California" },
+    { "code": "28804", "name": "Mabatini" },
+    { "code": "28805", "name": "Ngei" }
+  ],
+  "289": [
+    { "code": "28901", "name": "Nairobi Central" },
+    { "code": "28902", "name": "Ngara" },
+    { "code": "28903", "name": "Pangani" },
+    { "code": "28904", "name": "Ziwani/Kariokor" },
+    { "code": "28905", "name": "Landimawe" },
+    { "code": "28906", "name": "Nairobi South" }
+  ],
+  "290": [
+    { "code": "29001", "name": "Hospital" },
+    { "code": "29002", "name": "Mabatini" },
+    { "code": "29003", "name": "Huruma" },
+    { "code": "29004", "name": "Ngei" },
+    { "code": "29005", "name": "Mlango Kubwa" },
+    { "code": "29006", "name": "Kiamaiko" }
+  ]
+}
+
