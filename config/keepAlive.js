@@ -10,17 +10,15 @@ const startKeepAlive = () => {
   }
 
   const url = `${env.appUrl}/health`;
-  const interval = 10 * 60 * 1000; // 10 minutes
-
-  // Force IPv4 and set custom agent
   const agent = new http.Agent({ family: 4 });
 
-  // Wait 5 seconds before first ping (server startup)
+  // First ping after 1 minute
   setTimeout(() => {
     ping(url, agent);
-    setInterval(() => ping(url, agent), interval);
+    // Then every 10 minutes
+    setInterval(() => ping(url, agent), 10 * 60 * 1000);
     logger.info(`🔄 Keep-alive started — pinging ${url} every 10 minutes`);
-  }, 5000);
+  }, 1 * 60 * 1000);
 };
 
 const ping = async (url, agent) => {
