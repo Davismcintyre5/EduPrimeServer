@@ -13,6 +13,8 @@ const env = {
 
   keepAlive: process.env.KEEP_ALIVE === 'true',
 
+  corsOrigins: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : ['http://localhost:3000', 'http://localhost:3001'],
+
   redisEnabled: process.env.REDIS_ENABLED === 'true',
   redisUrl: process.env.REDIS_URL,
 
