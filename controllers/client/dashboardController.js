@@ -119,8 +119,61 @@ const getStats = asyncHandler(async (req, res) => {
 // GET /api/school/dashboard/recent-activities
 const getRecentActivities = asyncHandler(async (req, res) => {
   const AuditLog = require('../../models/client/Log');
-  const logs = await AuditLog.find({ schoolId: req.schoolId }).sort({ createdAt: -1 }).limit(10);
-  return success(res, logs);
+  const logs = await AuditLog.find({ schoolId: req.schoolId })
+    .sort({ createdAt: -1 })
+    .limit(10)
+    .populate({ path: 'userId', model: 'User', select: 'name role' })
+    .lean();
+
+  const actionLabels = {
+    'login': 'Logged in',
+    'logout': 'Logged out',
+    'student_created': 'Added new student',
+    'student_updated': 'Updated student',
+    'student_deleted': 'Deleted student',
+    'staff_created': 'Added staff member',
+    'attendance_marked': 'Marked attendance',
+    'marks_saved': 'Saved exam marks',
+    'marks_submitted': 'Submitted marks',
+    'exam_created': 'Created exam',
+    'report_cards_generated': 'Generated report cards',
+    'fee_structure_created': 'Created fee structure',
+    'payment_recorded': 'Recorded payment',
+    'expense_created': 'Recorded expense',
+    'invoice_created': 'Created invoice',
+    'invoices_generated': 'Generated invoices',
+    'book_issued': 'Issued book',
+    'book_returned': 'Returned book',
+    'leave_applied': 'Applied for leave',
+    'leave_reviewed': 'Reviewed leave',
+    'homework_assigned': 'Assigned homework',
+    'profile_updated': 'Updated profile',
+    'school_updated': 'Updated school info',
+    'settings_updated': 'Updated settings',
+    'backup_created': 'Created backup',
+    'backup_deleted': 'Deleted backup',
+    'backup_restored': 'Restored backup',
+    'salary_structure_created': 'Created salary structure',
+    'payroll_generated': 'Generated payroll',
+    'communication_created': 'Published communication',
+    'casual_staff_created': 'Added casual staff',
+    'timetable_updated': 'Updated timetable',
+  };
+
+  const enrichedLogs = logs.map(log => {
+    const userName = log.userId?.name || 'System';
+    const userInitial = userName.charAt(0).toUpperCase();
+    const action = actionLabels[log.action] || log.action?.replace(/_/g, ' ') || 'Unknown';
+    
+    return {
+      ...log,
+      userName,
+      userInitial,
+      actionLabel: action,
+    };
+  });
+
+  return success(res, enrichedLogs);
 });
 
 // GET /api/school/dashboard/announcements

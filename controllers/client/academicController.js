@@ -196,9 +196,20 @@ const saveTimetable = asyncHandler(async (req, res) => {
   return success(res, entry, 'Timetable saved');
 });
 
+const deleteTimetable = asyncHandler(async (req, res) => {
+  await Timetable.findOneAndDelete({ _id: req.params.id, schoolId: req.schoolId });
+  return success(res, null, 'Timetable deleted');
+});
+
+const deleteTimetableByGrade = asyncHandler(async (req, res) => {
+  const { gradeId } = req.params;
+  await Timetable.deleteMany({ schoolId: req.schoolId, gradeId });
+  return success(res, null, 'Timetable deleted');
+});
+
 module.exports = {
   getGrades, createGrade, updateGrade, deleteGrade,
   getSections, createSection, updateSection, deleteSection,
   getSubjects, createSubject, updateSubject, deleteSubject,
-  getTimetable, saveTimetable,
+  getTimetable, saveTimetable,deleteTimetable,deleteTimetableByGrade,
 };

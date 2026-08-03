@@ -10,6 +10,7 @@ const schoolSchema = new mongoose.Schema({
   currency: { type: String, required: true, default: 'KES' },
   type: { type: String, enum: ['private', 'public'], required: true },
   levels: [{ type: String, enum: ['primary', 'jss', 'sss'] }],
+  code: { type: String, unique: true, sparse: true },  // 🆕 School code for parent registration
 
   // School Contact
   email: { type: String },

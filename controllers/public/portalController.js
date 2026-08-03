@@ -22,23 +22,41 @@ const logger = require('../../utils/logger');
 
 // ═══════════ REGISTER ═══════════
 const register = asyncHandler(async (req, res) => {
-  const { name, email, phone, password, admissionNumber } = req.body;
-  if (!name || !email || !password || !admissionNumber) return error(res, 'All fields are required', 400);
-  const student = await Student.findOne({ admissionNumber });
-  if (!student) return error(res, 'Student not found with this admission number', 404);
-  const school = await School.findById(student.schoolId);
-  if (!school || !school.isActive) return error(res, 'School not found or currently inactive', 404);
+  const { name, email, phone, password, schoolCode, admissionNumber } = req.body;
+  if (!name || !email || !password || !schoolCode || !admissionNumber) {
+    return error(res, 'All fields are required', 400);
+  }
+
+  // Find school by code
+  const school = await School.findOne({ code: schoolCode, isActive: true });
+  if (!school) return error(res, 'Invalid school code. Please check and try again.', 404);
+
+  // Find student within that school
+  const student = await Student.findOne({ admissionNumber, schoolId: school._id });
+  if (!student) return error(res, 'Student not found in this school. Please check the admission number and school code.', 404);
+
+  // Check if parent already exists
   let parent = await Parent.findOne({ email });
   if (parent) {
     if (!parent.children.includes(student._id)) { parent.children.push(student._id); await parent.save(); }
     if (!student.parentId || student.parentId.toString() !== parent._id.toString()) { student.parentId = parent._id; await student.save(); }
     return success(res, { message: 'This student has been linked to your existing account. Please login.' }, 'Student linked successfully');
   }
+
   try {
     const hashed = await hashPassword(password);
-    parent = await Parent.create({ schoolId: student.schoolId, name, email, phone: phone || '', password: hashed, children: [student._id], isActive: true });
+    parent = await Parent.create({ schoolId: school._id, name, email, phone: phone || '', password: hashed, children: [student._id], isActive: true });
     student.parentId = parent._id; await student.save();
-    try { await sendEmail(email, 'welcomeParent', { schoolName: school.name, logo: school.logo, parentName: name, studentName: `${student.firstName} ${student.lastName}`, admissionNumber: student.admissionNumber, grade: student.grade, section: student.section, portalUrl: `${process.env.CLIENT_URL || 'http://localhost:3000'}/portal/login`, school }, school); } catch (emailErr) { logger.warn(`⚠️ Failed to send welcome email: ${emailErr.message}`); }
+
+    try {
+      await sendEmail(email, 'welcomeParent', {
+        schoolName: school.name, logo: school.logo, parentName: name,
+        studentName: `${student.firstName} ${student.lastName}`,
+        admissionNumber: student.admissionNumber, grade: student.grade, section: student.section,
+        portalUrl: `${process.env.CLIENT_URL || 'http://localhost:3000'}/portal/login`, school,
+      }, school);
+    } catch (emailErr) { logger.warn(`⚠️ Failed to send welcome email: ${emailErr.message}`); }
+
     return success(res, { parentId: parent._id, message: 'Registration successful! You can now login.' }, 'Registration successful', 201);
   } catch (err) {
     logger.error(`❌ Parent creation error: ${err.message}`);

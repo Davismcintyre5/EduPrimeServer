@@ -23,6 +23,8 @@ const createBackupJSON = async () => {
   const db = mongoose.connection.db;
   const collections = await db.listCollections().toArray();
 
+  const excludedCollections = ['logs', 'auditlogs', 'health', 'backups'];
+
   const backup = {
     appName: process.env.APP_NAME || 'EduPrime',
     version: '1.0.0',
@@ -31,15 +33,18 @@ const createBackupJSON = async () => {
   };
 
   for (const col of collections) {
+    if (excludedCollections.includes(col.name)) continue;
+
     const data = await db.collection(col.name).find({}).toArray();
     backup.collections[col.name] = data.map((doc) => {
       const obj = { ...doc };
       if (obj._id) obj._id = obj._id.toString();
       if (obj.schoolId) obj.schoolId = obj.schoolId.toString();
-      if (obj.createdBy) obj.createdBy = obj.createdBy.toString();
-      if (obj.adminId) obj.adminId = obj.adminId.toString();
-      if (obj.reviewedBy) obj.reviewedBy = obj.reviewedBy.toString();
-      if (obj.handledBy) obj.handledBy = obj.handledBy.toString();
+      if (obj.createdBy) obj.createdBy = obj.createdBy?.toString();
+      if (obj.adminId) obj.adminId = obj.adminId?.toString();
+      if (obj.reviewedBy) obj.reviewedBy = obj.reviewedBy?.toString();
+      if (obj.handledBy) obj.handledBy = obj.handledBy?.toString();
+      if (obj.suspendedBy) obj.suspendedBy = obj.suspendedBy?.toString();
       return obj;
     });
   }

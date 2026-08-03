@@ -6,7 +6,7 @@ const {
   getGrades, createGrade, updateGrade, deleteGrade,
   getSections, createSection, updateSection, deleteSection,
   getSubjects, createSubject, updateSubject, deleteSubject,
-  getTimetable, saveTimetable,
+  getTimetable, saveTimetable,deleteTimetable,deleteTimetableByGrade,
 } = require('../../controllers/client/academicController');
 
 router.use(auth, tenant);
@@ -32,5 +32,7 @@ router.delete('/subjects/:id', deleteSubject);
 // Timetable
 router.get('/timetable', getTimetable);
 router.post('/timetable', saveTimetable);
+router.delete('/timetable/:id', deleteTimetable);
+router.delete('/timetable/grade/:gradeId', deleteTimetableByGrade);
 
 module.exports = router;

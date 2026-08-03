@@ -13,9 +13,24 @@ const getLogs = asyncHandler(async (req, res) => {
   if (action) filter.action = action;
   if (search) filter.details = { $regex: search, $options: 'i' };
 
-  const logs = await AuditLog.find(filter).sort({ createdAt: -1 }).skip(skip).limit(limit);
+  const logs = await AuditLog.find(filter)
+    .sort({ createdAt: -1 })
+    .skip(skip)
+    .limit(limit)
+    .populate({ path: 'userId', model: 'User', select: 'name role' })
+    .lean();
+
+  const enrichedLogs = logs.map(log => {
+    if (log.userId && typeof log.userId === 'object' && log.userId.name) {
+      const role = log.userId.role || '';
+      const shortRole = role === 'teacher' ? 'Tr' : role === 'deputy_principal' ? 'DP' : role === 'principal' ? 'Pr' : role === 'school_admin' ? 'Ad' : '';
+      return { ...log, performedBy: `${log.userId.name} (${shortRole})` };
+    }
+    return { ...log, performedBy: 'System' };
+  });
+
   const total = await AuditLog.countDocuments(filter);
-  return paginated(res, logs, total, page, limit, 'Logs fetched');
+  return paginated(res, enrichedLogs, total, page, limit, 'Logs fetched');
 });
 
 // DELETE /api/school/logs

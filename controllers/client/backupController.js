@@ -16,6 +16,19 @@ const createBackupJSON = async (schoolId) => {
   const mongoose = require('mongoose');
   const db = mongoose.connection.db;
   const collections = await db.listCollections().toArray();
+  const schoolObjectId = new mongoose.Types.ObjectId(schoolId);
+
+  const schoolCollections = [
+    'students', 'users', 'parents', 'attendances', 'marks', 'exams',
+    'reportcards', 'feetransactions', 'feestructures', 'payments',
+    'expenses', 'incomes', 'accounts', 'budgets', 'books', 'booktransactions',
+    'inventoryitems', 'purchaseorders', 'homeworks', 'homeworksubmissions',
+    'announcements', 'timetables', 'subjects', 'grades', 'sections',
+    'leaves', 'salarystructures', 'payrolls', 'casualstaffs',
+    'schoolsettings',
+  ];
+
+  const excludedCollections = ['auditlogs', 'logs', 'schoolbackups'];
 
   const backup = {
     appName: process.env.APP_NAME || 'EduPrime',
@@ -26,13 +39,38 @@ const createBackupJSON = async (schoolId) => {
   };
 
   for (const col of collections) {
-    const data = await db.collection(col.name).find({ schoolId: schoolId.toString() }).toArray();
+    if (!schoolCollections.includes(col.name)) continue;
+    if (excludedCollections.includes(col.name)) continue;
+
+    const data = await db.collection(col.name).find({ schoolId: schoolObjectId }).toArray();
     backup.collections[col.name] = data.map((doc) => {
       const obj = { ...doc };
       if (obj._id) obj._id = obj._id.toString();
       if (obj.schoolId) obj.schoolId = obj.schoolId.toString();
-      if (obj.userId) obj.userId = obj.userId?.toString();
       if (obj.studentId) obj.studentId = obj.studentId?.toString();
+      if (obj.userId) obj.userId = obj.userId?.toString();
+      if (obj.staffId) obj.staffId = obj.staffId?.toString();
+      if (obj.gradeId) obj.gradeId = obj.gradeId?.toString();
+      if (obj.sectionId) obj.sectionId = obj.sectionId?.toString();
+      if (obj.subjectId) obj.subjectId = obj.subjectId?.toString();
+      if (obj.examId) obj.examId = obj.examId?.toString();
+      if (obj.parentId) obj.parentId = obj.parentId?.toString();
+      if (obj.feeStructureId) obj.feeStructureId = obj.feeStructureId?.toString();
+      if (obj.invoiceId) obj.invoiceId = obj.invoiceId?.toString();
+      if (obj.accountId) obj.accountId = obj.accountId?.toString();
+      if (obj.bookId) obj.bookId = obj.bookId?.toString();
+      if (obj.borrowerId) obj.borrowerId = obj.borrowerId?.toString();
+      if (obj.recordedBy) obj.recordedBy = obj.recordedBy?.toString();
+      if (obj.generatedBy) obj.generatedBy = obj.generatedBy?.toString();
+      if (obj.reviewedBy) obj.reviewedBy = obj.reviewedBy?.toString();
+      if (obj.markedBy) obj.markedBy = obj.markedBy?.toString();
+      if (obj.enteredBy) obj.enteredBy = obj.enteredBy?.toString();
+      if (obj.assignedBy) obj.assignedBy = obj.assignedBy?.toString();
+      if (obj.postedBy) obj.postedBy = obj.postedBy?.toString();
+      if (obj.issuedBy) obj.issuedBy = obj.issuedBy?.toString();
+      if (obj.requestedBy) obj.requestedBy = obj.requestedBy?.toString();
+      if (obj.approvedBy) obj.approvedBy = obj.approvedBy?.toString();
+      if (obj.casualStaffId) obj.casualStaffId = obj.casualStaffId?.toString();
       return obj;
     });
   }
