@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {
+  submitContact,
   getPublicSettings,
   getPublicLegals,
   getSupportInfo,
@@ -11,7 +12,9 @@ const {
   registerSchool,
   checkRegistrationStatus,
   forgotPassword,
-  resetPassword ,
+  resetPassword,
+  getLandingData, 
+  getChatSettings,
 } = require('../../controllers/public/publicController');
 const { authLimiter } = require('../../middleware/global/rateLimiter');
 
@@ -19,6 +22,11 @@ const { authLimiter } = require('../../middleware/global/rateLimiter');
 router.get('/settings', getPublicSettings);
 router.get('/legals', getPublicLegals);
 router.get('/support', getSupportInfo);
+router.post('/contact', authLimiter, submitContact);
+
+// Landing page data
+router.get('/landing', getLandingData);
+router.get('/chat-settings', getChatSettings);
 
 // Reference data (dropdowns)
 router.get('/countries', getCountries);

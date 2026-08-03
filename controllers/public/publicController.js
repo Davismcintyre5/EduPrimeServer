@@ -10,11 +10,25 @@ const { sendSMS } = require('../../services/smsService');
 const { generateAccessToken } = require('../../utils/generateToken');
 const { hashPassword } = require('../../utils/hashPassword');
 const logger = require('../../utils/logger');
+const ContactMessage = require('../../models/admin/ContactMessage');
 
 const countries = require('../../utils/countries');
 const counties = require('../../utils/counties');
 const constituencies = require('../../utils/constituencies');
 const wards = require('../../utils/wards');
+
+// POST /api/public/contact
+const submitContact = asyncHandler(async (req, res) => {
+  const { name, email, subject, message } = req.body;
+  if (!name || !email || !subject || !message) {
+    return error(res, 'All fields are required', 400);
+  }
+
+  await ContactMessage.create({ name, email, subject, message });
+
+  logger.info(`📩 Contact form: ${name} — ${subject}`);
+  return success(res, null, 'Message sent successfully', 201);
+});
 
 // ═══════════ PUBLIC INFO ═══════════
 
@@ -188,7 +202,78 @@ const resetPassword = asyncHandler(async (req, res) => {
   return success(res, null, 'Password reset successful');
 });
 
+// GET /api/public/landing
+const getLandingData = asyncHandler(async (req, res) => {
+  const keys = [
+    'landing_hero_title', 'landing_hero_subtitle', 'landing_hero_cta_text',
+    'landing_hero_cta_link', 'landing_hero_image',
+    'landing_stats_schools', 'landing_stats_students', 'landing_stats_staff',
+    'landing_features', 'landing_downloads', 'landing_testimonials',
+    'app_name', 'logo_url', 'support_email', 'support_phone',
+    'primary_color', 'accent_color', 'allow_self_registration',
+  ];
+
+  const settings = await Setting.find({ key: { $in: keys } });
+  const result = {};
+
+  settings.forEach((s) => {
+    if (['landing_features', 'landing_downloads', 'landing_testimonials'].includes(s.key)) {
+      try {
+        const parsed = typeof s.value === 'string' ? JSON.parse(s.value) : s.value;
+        // Only return active items for public
+        if (Array.isArray(parsed)) {
+          result[s.key] = parsed.filter(item => item.isActive !== false);
+        } else {
+          result[s.key] = parsed;
+        }
+      } catch {
+        result[s.key] = s.value;
+      }
+    } else {
+      result[s.key] = s.value;
+    }
+  });
+
+  // Defaults
+  result.app_name = result.app_name || 'EduPrime';
+  result.landing_hero_title = result.landing_hero_title || 'Manage Your School with Ease';
+  result.landing_hero_subtitle = result.landing_hero_subtitle || 'The complete school management system for modern educational institutions.';
+  result.landing_hero_cta_text = result.landing_hero_cta_text || 'Get Started';
+  result.landing_hero_cta_link = result.landing_hero_cta_link || '/register';
+  result.landing_features = result.landing_features || [];
+  result.landing_downloads = result.landing_downloads || [];
+  result.landing_testimonials = result.landing_testimonials || [];
+  result.landing_stats_schools = result.landing_stats_schools || 0;
+  result.landing_stats_students = result.landing_stats_students || 0;
+  result.landing_stats_staff = result.landing_stats_staff || 0;
+
+  return success(res, result);
+});
+
+// GET /api/public/chat-settings
+const getChatSettings = asyncHandler(async (req, res) => {
+  const keys = [
+    'chat_enabled', 'chat_bot_name', 'chat_greeting', 'chat_color', 'chat_position', 'chat_icon',
+  ];
+  // Don't expose api_key or api_url to public
+
+  const settings = await Setting.find({ key: { $in: keys } });
+  const result = {};
+  settings.forEach((s) => { result[s.key] = s.value; });
+
+  result.chat_enabled = result.chat_enabled ?? false;
+  result.chat_bot_name = result.chat_bot_name || 'EduPrime Assistant';
+  result.chat_greeting = result.chat_greeting || '👋 Hi! How can I help you with EduPrime today?';
+  result.chat_color = result.chat_color || '#f0a500';
+  result.chat_position = result.chat_position || 'bottom-right';
+  result.chat_icon = result.chat_icon || '💬';
+
+  return success(res, result);
+});
+
+
 module.exports = {
+  submitContact,
   getPublicSettings,
   getPublicLegals,
   getSupportInfo,
@@ -200,4 +285,6 @@ module.exports = {
   checkRegistrationStatus,
   forgotPassword,
   resetPassword,
+  getLandingData, 
+  getChatSettings,
 };

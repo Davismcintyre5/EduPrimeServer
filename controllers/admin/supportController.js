@@ -7,6 +7,27 @@ const { sendEmail } = require('../../services/emailService');
 const Setting = require('../../models/admin/Setting');
 const School = require('../../models/admin/School');
 const logger = require('../../utils/logger');
+const ContactMessage = require('../../models/admin/ContactMessage');
+
+const getContacts = asyncHandler(async (req, res) => {
+  const { page, limit, skip } = paginate(req.query);
+  const filter = {};
+  if (req.query.read === 'true') filter.isRead = true;
+  if (req.query.read === 'false') filter.isRead = false;
+
+  const messages = await ContactMessage.find(filter)
+    .sort({ createdAt: -1 })
+    .skip(skip)
+    .limit(limit);
+
+  const total = await ContactMessage.countDocuments(filter);
+  return paginated(res, messages, total, page, limit, 'Messages fetched');
+});
+
+const markRead = asyncHandler(async (req, res) => {
+  await ContactMessage.findByIdAndUpdate(req.params.id, { isRead: true });
+  return success(res, null, 'Marked as read');
+});
 
 // GET /api/admin/support
 const getTickets = asyncHandler(async (req, res) => {
@@ -76,4 +97,4 @@ const updateTicket = asyncHandler(async (req, res) => {
   return success(res, ticket, 'Ticket updated');
 });
 
-module.exports = { getTickets, getTicket, updateTicket };
+module.exports = {getContacts,markRead , getTickets, getTicket, updateTicket };
