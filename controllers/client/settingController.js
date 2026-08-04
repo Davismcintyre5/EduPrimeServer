@@ -43,7 +43,7 @@ const getSchoolInfo = asyncHandler(async (req, res) => {
 
 const updateSchoolInfo = asyncHandler(async (req, res) => {
   if (!isAdmin(req.user.role)) return error(res, 'Access denied', 403);
-  const allowed = ['name', 'type', 'levels', 'email', 'phone', 'website', 'motto', 'vision', 'mission', 'town', 'location', 'logo', 'code'];
+  const allowed = ['name', 'type', 'levels', 'email', 'phone', 'website', 'motto', 'vision', 'mission', 'town', 'location', 'address', 'logo', 'code'];
   const updates = {};
   allowed.forEach(f => { if (req.body[f] !== undefined) updates[f] = req.body[f]; });
   const school = await School.findByIdAndUpdate(req.schoolId, updates, { new: true }).select('-adminPassword');

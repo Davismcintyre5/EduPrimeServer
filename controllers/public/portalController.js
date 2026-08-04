@@ -148,7 +148,7 @@ const getStudentDetail = asyncHandler(async (req, res) => {
   const presentAtt = await Attendance.countDocuments({ studentId: student._id, status: 'present' });
   const todayAtt = await Attendance.findOne({ studentId: student._id, date: { $gte: today } });
   const fees = await FeeTransaction.find({ studentId: student._id }).sort({ createdAt: -1 });
-  const feeStructures = await FeeStructure.find({ schoolId: student.schoolId });
+  const feeStructures = await FeeStructure.find({ schoolId: student.schoolId }).select('name feeType amount term academicYear');
   const gradeDoc = await Grade.findOne({ schoolId: student.schoolId, name: student.grade });
   const subjects = gradeDoc ? await Subject.find({ schoolId: student.schoolId, gradeId: gradeDoc._id }).select('_id name') : [];
   const sectionDoc = gradeDoc ? await Section.findOne({ gradeId: gradeDoc._id, name: student.section }) : null;

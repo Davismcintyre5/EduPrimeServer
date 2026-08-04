@@ -12,10 +12,11 @@ const logger = require('../../utils/logger');
 const getBooks = asyncHandler(async (req, res) => {
   const { page, limit, skip } = paginate(req.query);
   const filter = { schoolId: req.schoolId };
+  if (req.query.type) filter.type = req.query.type; else filter.type = 'book'; // default to books
   if (req.query.search) filter.$or = [{ title: { $regex: req.query.search, $options: 'i' } }, { author: { $regex: req.query.search, $options: 'i' } }, { isbn: { $regex: req.query.search, $options: 'i' } }];
   if (req.query.category) filter.category = req.query.category;
   const books = await Book.find(filter).sort({ title: 1 }).skip(skip).limit(limit);
-  return paginated(res, books, await Book.countDocuments(filter), page, limit, 'Books fetched');
+  return paginated(res, books, await Book.countDocuments(filter), page, limit, 'Items fetched');
 });
 
 const getBook = asyncHandler(async (req, res) => {
@@ -153,4 +154,139 @@ const payFine = asyncHandler(async (req, res) => {
   return success(res, txn, 'Fine marked as paid');
 });
 
-module.exports = { getBooks, getBook, createBook, updateBook, deleteBook, getTransactions, issueBook, returnBook, payFine };
+// POST /api/school/library/stationery
+const createStationery = asyncHandler(async (req, res) => {
+  const { title, category, quantity, unit, price, reorderLevel } = req.body;
+  if (!title || !category) return error(res, 'Name and category required', 400);
+  const qty = parseInt(quantity) || 0;
+  const item = await Book.create({
+    schoolId: req.schoolId, type: 'stationery',
+    title, author: '', category,
+    quantity: qty, available: qty,
+    unit: unit || 'piece', price: price || 0,
+    reorderLevel: reorderLevel || 5
+  });
+  await AuditLog.create({ schoolId: req.schoolId, userId: req.user.id, action: 'stationery_created', details: title, ip: req.ip });
+  return success(res, item, 'Stationery added', 201);
+});
+
+// POST /api/school/library/stationery/:id/issue
+const issueStationery = asyncHandler(async (req, res) => {
+  const { studentId, quantity } = req.body;
+  const qty = parseInt(quantity);
+  if (!studentId || !qty || qty < 1) return error(res, 'Student and valid quantity required', 400);
+
+  const item = await Book.findOne({ _id: req.params.id, schoolId: req.schoolId, type: 'stationery' });
+  if (!item) return error(res, 'Stationery not found', 404);
+  if (item.available < qty) return error(res, `Not enough stock. Only ${item.available} available.`, 400);
+
+  const student = await Student.findOne({ _id: studentId, schoolId: req.schoolId });
+  if (!student) return error(res, 'Student not found', 404);
+
+  item.available -= qty;
+  await item.save();
+
+  await BookTransaction.create({
+    schoolId: req.schoolId,
+    bookId: item._id,
+    borrowerId: studentId,
+    borrowerType: 'student',
+    issueDate: new Date(),
+    dueDate: new Date(),
+    returnDate: new Date(),
+    status: 'returned',
+    issuedBy: req.user.id,
+    notes: `Issued ${qty} ${item.unit || 'pieces'} of ${item.title}`
+  });
+
+  await AuditLog.create({
+    schoolId: req.schoolId,
+    userId: req.user.id,
+    action: 'stationery_issued',
+    details: `${item.title} x${qty} to ${student.firstName} ${student.lastName}`,
+    ip: req.ip
+  });
+
+  logger.info(`📎 Stationery issued: ${item.title} x${qty} → ${student.firstName} ${student.lastName}`);
+  return success(res, item, 'Stationery issued');
+});
+
+// POST /api/school/library/stationery/:id/restock
+const restockStationery = asyncHandler(async (req, res) => {
+  const { quantity, notes } = req.body;
+  if (!quantity) return error(res, 'Quantity required', 400);
+
+  const item = await Book.findOne({ _id: req.params.id, schoolId: req.schoolId, type: 'stationery' });
+  if (!item) return error(res, 'Stationery not found', 404);
+
+  const qty = parseInt(quantity);
+  item.quantity += qty;
+  item.available += qty;
+  await item.save();
+
+await BookTransaction.create({
+    schoolId: req.schoolId, bookId: item._id,
+    borrowerId: req.user.id, borrowerType: 'staff',
+    issueDate: new Date(),
+    dueDate: new Date(),
+    returnDate: new Date(),
+    status: 'returned',
+    issuedBy: req.user.id,
+    notes: `Restocked +${qty} ${item.unit || 'pieces'}. ${notes || ''}`
+  });
+
+  await AuditLog.create({ schoolId: req.schoolId, userId: req.user.id, action: 'stationery_restocked', details: `${item.title} +${qty}`, ip: req.ip });
+  return success(res, item, 'Stock added');
+});
+
+// GET /api/school/library/stationery/transactions
+const getStationeryTransactions = asyncHandler(async (req, res) => {
+  const { page, limit, skip } = paginate(req.query);
+  const items = await Book.find({ schoolId: req.schoolId, type: 'stationery' }).select('_id');
+  const itemIds = items.map(i => i._id);
+
+  const txns = await BookTransaction.find({ schoolId: req.schoolId, bookId: { $in: itemIds } })
+    .sort({ createdAt: -1 }).skip(skip).limit(limit)
+    .populate('bookId', 'title unit')
+    .populate('issuedBy', 'name')
+    .lean();
+
+  const enriched = await Promise.all(txns.map(async txn => {
+    let borrowerName = '—';
+    if (txn.borrowerType === 'student') {
+      const s = await Student.findById(txn.borrowerId).select('firstName lastName');
+      if (s) borrowerName = `${s.firstName} ${s.lastName}`;
+    }
+    return { ...txn, borrowerName };
+  }));
+
+  const total = await BookTransaction.countDocuments({ schoolId: req.schoolId, bookId: { $in: itemIds } });
+  return paginated(res, enriched, total, page, limit, 'Transactions fetched');
+});
+
+
+// PUT /api/school/library/stationery/:id
+const updateStationery = asyncHandler(async (req, res) => {
+  const allowed = ['title', 'category', 'unit', 'price', 'reorderLevel', 'isActive'];
+  const updates = {};
+  allowed.forEach(f => { if (req.body[f] !== undefined) updates[f] = req.body[f]; });
+  
+  const item = await Book.findOneAndUpdate(
+    { _id: req.params.id, schoolId: req.schoolId, type: 'stationery' },
+    updates,
+    { new: true }
+  );
+  if (!item) return error(res, 'Stationery not found', 404);
+  return success(res, item, 'Updated');
+});
+
+// DELETE /api/school/library/stationery/:id
+const deleteStationery = asyncHandler(async (req, res) => {
+  const item = await Book.findOneAndDelete({ _id: req.params.id, schoolId: req.schoolId, type: 'stationery' });
+  if (!item) return error(res, 'Stationery not found', 404);
+  return success(res, null, 'Deleted');
+});
+
+module.exports = { getBooks, getBook, createBook, updateBook, deleteBook,
+ getTransactions, issueBook, returnBook, payFine,createStationery, issueStationery, 
+ restockStationery, getStationeryTransactions,updateStationery,deleteStationery };

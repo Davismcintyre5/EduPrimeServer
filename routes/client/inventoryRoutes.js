@@ -2,19 +2,41 @@ const express = require('express');
 const router = express.Router();
 const auth = require('../../middleware/client/auth');
 const tenant = require('../../middleware/client/tenant');
-const { getItems, getItem, createItem, updateItem, deleteItem, adjustStock, getOrders, createOrder, updateOrderStatus } = require('../../controllers/client/inventoryController');
+const {
+  getSuppliers, createSupplier, updateSupplier, deleteSupplier,
+  getItems, getItem, createItem, updateItem, deleteItem, adjustStock,
+  getMovements,sendOrderToSupplier ,
+  getOrders, createOrder, updateOrderStatus, deleteOrder,
+  getStockSummary,
+} = require('../../controllers/client/inventoryController');
 
 router.use(auth, tenant);
 
+// Suppliers
+router.get('/suppliers', getSuppliers);
+router.post('/suppliers', createSupplier);
+router.put('/suppliers/:id', updateSupplier);
+router.delete('/suppliers/:id', deleteSupplier);
+
+// Items
 router.get('/items', getItems);
 router.get('/items/:id', getItem);
 router.post('/items', createItem);
 router.put('/items/:id', updateItem);
 router.delete('/items/:id', deleteItem);
-router.patch('/items/:id/stock', adjustStock);
+router.post('/items/:id/adjust', adjustStock);
 
+// Movements
+router.get('/movements', getMovements);
+
+// Purchase Orders
 router.get('/orders', getOrders);
 router.post('/orders', createOrder);
 router.patch('/orders/:id/status', updateOrderStatus);
+router.delete('/orders/:id', deleteOrder);
+router.post('/orders/:id/send', sendOrderToSupplier);
+
+// Reports
+router.get('/summary', getStockSummary);
 
 module.exports = router;

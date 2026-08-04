@@ -170,10 +170,9 @@ const forgotPassword = asyncHandler(async (req, res) => {
   if (!school || !school.isActive) return success(res, null, 'If an account exists, a reset link has been sent.');
 
   const resetToken = generateAccessToken({ id: user._id }, '1h');
-  await sendEmail(email, 'passwordReset', {
+ await sendEmail(email, 'passwordReset', {
     resetUrl: `${process.env.CLIENT_URL}/reset-password?token=${resetToken}`,
-  }, school);
-
+}); 
   logger.info(`🔑 Password reset requested: ${email}`);
   return success(res, null, 'If an account exists, a reset link has been sent.');
 });
