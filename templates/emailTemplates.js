@@ -328,7 +328,7 @@ module.exports = {
     };
   },
 
-  feeOverdue: (data, ctx) => {
+feeOverdue: (data, ctx) => {
     const { name, logo, support } = getContext(ctx);
     return {
       subject: `Fee Overdue — ${name}`,
@@ -336,9 +336,10 @@ module.exports = {
         <h2 style="color:#dc2626;">Overdue Payment ⚠️</h2>
         <div style="background:#fef2f2;border:1px solid #fecaca;padding:16px;border-radius:8px;margin:16px 0;">
           <p style="margin:0;"><strong>Student:</strong> ${data.studentName}</p>
-          <p style="margin:4px 0;"><strong>Amount:</strong> ${ctx?.currency || 'KES'} ${data.amount}</p>
-          <p style="margin:4px 0;"><strong>Late Fine:</strong> ${ctx?.currency || 'KES'} ${data.lateFine}</p>
+          <p style="margin:4px 0;"><strong>Total Overdue:</strong> ${ctx?.currency || 'KES'} ${Number(data.amount).toLocaleString()}</p>
+          <p style="margin:4px 0;"><strong>Overdue Invoices:</strong> ${data.invoiceCount}</p>
         </div>
+        <p>Please make payment at your earliest convenience to avoid further action.</p>
       `, support),
     };
   },
